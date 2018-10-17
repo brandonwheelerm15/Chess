@@ -1,4 +1,5 @@
-﻿#pragma once
+﻿#ifndef APPMAIN_XAML_H
+#define APPMAIN_XAML_H
 
 #include "App.g.h"
 
@@ -17,3 +18,4 @@ namespace Chess
 		void OnNavigationFailed(Platform::Object ^sender, Windows::UI::Xaml::Navigation::NavigationFailedEventArgs ^e);
 	};
 }
+#endif

@@ -1,6 +1,2 @@
-﻿#pragma once
-
-#include <collection.h>
-#include <ppltasks.h>
-
-#include "App.xaml.h"
+#pragma once
+#include "Code\Headers\main.h"

@@ -10,10 +10,10 @@
 #include "XamlTypeInfo.g.h"
 
 #include "App.xaml.h"
-#include "MainPage.xaml.h"
+#include "Start.xaml.h"
 #include "XamlBindingInfo.g.hpp"
 #include "App.g.hpp"
-#include "MainPage.g.hpp"
+#include "Start.g.hpp"
 
 template<typename T>
 ::Platform::Object^ ActivateType()
@@ -68,8 +68,8 @@ struct TypeInfo
 const TypeInfo TypeInfos[] = 
 {
     //   0
-    L"Chess.MainPage", L"",
-    &ActivateType<::Chess::MainPage>, nullptr, nullptr, nullptr,
+    L"Chess.Start", L"",
+    &ActivateType<::Chess::Start>, nullptr, nullptr, nullptr,
     1, // Windows.UI.Xaml.Controls.Page
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
@@ -106,9 +106,9 @@ const UINT TypeInfoLookup[] = {
       0,   //   9
       0,   //  10
       0,   //  11
-      0,   //  12
-      0,   //  13
-      0,   //  14
+      1,   //  12
+      1,   //  13
+      1,   //  14
       1,   //  15
       1,   //  16
       1,   //  17

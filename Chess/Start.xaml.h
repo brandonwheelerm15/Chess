@@ -1,4 +1,5 @@
-﻿#pragma once
+﻿#ifndef START_XAML_H
+#define START_XAML_H
 
 #include "Start.g.h"
 
@@ -11,3 +12,4 @@ namespace Chess
 
 	};
 }
+#endif
