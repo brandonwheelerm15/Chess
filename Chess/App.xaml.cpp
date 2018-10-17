@@ -1,5 +1,5 @@
 ﻿#include "Code\Headers\main.h"
-#include "Start.xaml.h"
+#include "Code\Pages\Start.xaml.h"
 
 using namespace Chess;
 

@@ -14,13 +14,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.xaml.cpp" />
-    <ClCompile Include="Start.xaml.cpp" />
+    <ClCompile Include="Code\Pages\Start.xaml.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.xaml.h" />
-    <ClInclude Include="Start.xaml.h" />
     <ClInclude Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Headers\main.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Code\Pages\Start.xaml.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
@@ -52,6 +52,7 @@
     <None Include="Chess_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Start.xaml" />
+    <Page Include="Code\Pages\Game.xaml" />
+    <Page Include="Code\Pages\Start.xaml" />
   </ItemGroup>
 </Project>

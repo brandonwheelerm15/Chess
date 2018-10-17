@@ -9,11 +9,13 @@
 #include "pch.h"
 #include "XamlTypeInfo.g.h"
 
+#include "Code\Pages\Game.xaml.h"
 #include "App.xaml.h"
-#include "Start.xaml.h"
+#include "Code\Pages\Start.xaml.h"
 #include "XamlBindingInfo.g.hpp"
+#include "Code\Pages\Game.g.hpp"
 #include "App.g.hpp"
-#include "Start.g.hpp"
+#include "Code\Pages\Start.g.hpp"
 
 template<typename T>
 ::Platform::Object^ ActivateType()
@@ -68,18 +70,24 @@ struct TypeInfo
 const TypeInfo TypeInfos[] = 
 {
     //   0
-    L"Chess.Start", L"",
-    &ActivateType<::Chess::Start>, nullptr, nullptr, nullptr,
-    1, // Windows.UI.Xaml.Controls.Page
+    L"Chess.Game", L"",
+    &ActivateType<::Chess::Game>, nullptr, nullptr, nullptr,
+    2, // Windows.UI.Xaml.Controls.Page
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   1
+    L"Chess.Start", L"",
+    &ActivateType<::Chess::Start>, nullptr, nullptr, nullptr,
+    2, // Windows.UI.Xaml.Controls.Page
+    0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
+    //   2
     L"Windows.UI.Xaml.Controls.Page", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     TypeInfo_Flags_IsSystemType | TypeInfo_Flags_None,
-    //   2
+    //   3
     L"Windows.UI.Xaml.Controls.UserControl", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
@@ -105,33 +113,33 @@ const UINT TypeInfoLookup[] = {
       0,   //   8
       0,   //   9
       0,   //  10
-      0,   //  11
-      1,   //  12
-      1,   //  13
-      1,   //  14
-      1,   //  15
-      1,   //  16
-      1,   //  17
-      1,   //  18
-      1,   //  19
-      1,   //  20
-      1,   //  21
-      1,   //  22
-      1,   //  23
-      1,   //  24
-      1,   //  25
-      1,   //  26
-      1,   //  27
-      1,   //  28
-      1,   //  29
-      2,   //  30
-      2,   //  31
-      2,   //  32
-      2,   //  33
-      2,   //  34
-      2,   //  35
-      2,   //  36
-      3,   //  37
+      1,   //  11
+      2,   //  12
+      2,   //  13
+      2,   //  14
+      2,   //  15
+      2,   //  16
+      2,   //  17
+      2,   //  18
+      2,   //  19
+      2,   //  20
+      2,   //  21
+      2,   //  22
+      2,   //  23
+      2,   //  24
+      2,   //  25
+      2,   //  26
+      2,   //  27
+      2,   //  28
+      2,   //  29
+      3,   //  30
+      3,   //  31
+      3,   //  32
+      3,   //  33
+      3,   //  34
+      3,   //  35
+      3,   //  36
+      4,   //  37
 };
 
 const TypeInfo* GetTypeInfo(::Platform::String^ typeName)

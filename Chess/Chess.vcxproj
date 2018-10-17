@@ -138,20 +138,26 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Code\Pages\Game.xaml.h">
+      <DependentUpon>Code\Pages\Game.xaml</DependentUpon>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Headers\main.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="Start.xaml.h">
-      <DependentUpon>Start.xaml</DependentUpon>
+    <ClInclude Include="Code\Pages\Start.xaml.h">
+      <DependentUpon>Code\Pages\Start.xaml</DependentUpon>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Start.xaml">
+    <Page Include="Code\Pages\Game.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Code\Pages\Start.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
@@ -171,11 +177,14 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Code\Pages\Game.xaml.cpp">
+      <DependentUpon>Code\Pages\Game.xaml</DependentUpon>
+    </ClCompile>
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>
-    <ClCompile Include="Start.xaml.cpp">
-      <DependentUpon>Start.xaml</DependentUpon>
+    <ClCompile Include="Code\Pages\Start.xaml.cpp">
+      <DependentUpon>Code\Pages\Start.xaml</DependentUpon>
     </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
