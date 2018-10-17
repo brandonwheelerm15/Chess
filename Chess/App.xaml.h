@@ -1,17 +1,9 @@
-﻿//
-// App.xaml.h
-// Declaration of the App class.
-//
-
-#pragma once
+﻿#pragma once
 
 #include "App.g.h"
 
 namespace Chess
 {
-	/// <summary>
-	/// Provides application-specific behavior to supplement the default Application class.
-	/// </summary>
 	ref class App sealed
 	{
 	protected:

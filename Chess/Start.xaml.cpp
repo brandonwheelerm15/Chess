@@ -1,10 +1,5 @@
-﻿//
-// MainPage.xaml.cpp
-// Implementation of the MainPage class.
-//
-
-#include "pch.h"
-#include "MainPage.xaml.h"
+﻿#include "pch.h"
+#include "Start.xaml.h"
 
 using namespace Chess;
 
@@ -19,9 +14,7 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-MainPage::MainPage()
+Start::Start()
 {
 	InitializeComponent();
 }
