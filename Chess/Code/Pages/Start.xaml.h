@@ -1,7 +1,7 @@
 ﻿#ifndef START_XAML_H
 #define START_XAML_H
 
-#include "Start.g.h"
+#include "Generated Files\Code\Pages\Start.g.h"
 
 namespace Chess
 {

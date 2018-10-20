@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "Code\Headers\Game.g.h"
+#include "Generated Files\Code\Pages\Game.g.h"
 
 namespace Chess
 {
