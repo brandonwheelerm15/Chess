@@ -7,6 +7,9 @@
 //------------------------------------------------------------------------------
 
 
+namespace Chess {
+    ref class BoardSpace;
+}
 
 namespace Chess
 {
@@ -28,6 +31,70 @@ namespace Chess
         bool _contentLoaded;
     
     
+        private: ::Chess::BoardSpace^ Board11;
+        private: ::Chess::BoardSpace^ Board12;
+        private: ::Chess::BoardSpace^ Board13;
+        private: ::Chess::BoardSpace^ Board14;
+        private: ::Chess::BoardSpace^ Board15;
+        private: ::Chess::BoardSpace^ Board16;
+        private: ::Chess::BoardSpace^ Board17;
+        private: ::Chess::BoardSpace^ Board18;
+        private: ::Chess::BoardSpace^ Board21;
+        private: ::Chess::BoardSpace^ Board22;
+        private: ::Chess::BoardSpace^ Board23;
+        private: ::Chess::BoardSpace^ Board24;
+        private: ::Chess::BoardSpace^ Board25;
+        private: ::Chess::BoardSpace^ Board26;
+        private: ::Chess::BoardSpace^ Board27;
+        private: ::Chess::BoardSpace^ Board28;
+        private: ::Chess::BoardSpace^ Board31;
+        private: ::Chess::BoardSpace^ Board32;
+        private: ::Chess::BoardSpace^ Board33;
+        private: ::Chess::BoardSpace^ Board34;
+        private: ::Chess::BoardSpace^ Board35;
+        private: ::Chess::BoardSpace^ Board36;
+        private: ::Chess::BoardSpace^ Board37;
+        private: ::Chess::BoardSpace^ Board38;
+        private: ::Chess::BoardSpace^ Board41;
+        private: ::Chess::BoardSpace^ Board42;
+        private: ::Chess::BoardSpace^ Board43;
+        private: ::Chess::BoardSpace^ Board44;
+        private: ::Chess::BoardSpace^ Board45;
+        private: ::Chess::BoardSpace^ Board46;
+        private: ::Chess::BoardSpace^ Board47;
+        private: ::Chess::BoardSpace^ Board48;
+        private: ::Chess::BoardSpace^ Board51;
+        private: ::Chess::BoardSpace^ Board52;
+        private: ::Chess::BoardSpace^ Board53;
+        private: ::Chess::BoardSpace^ Board54;
+        private: ::Chess::BoardSpace^ Board55;
+        private: ::Chess::BoardSpace^ Board56;
+        private: ::Chess::BoardSpace^ Board57;
+        private: ::Chess::BoardSpace^ Board58;
+        private: ::Chess::BoardSpace^ Board61;
+        private: ::Chess::BoardSpace^ Board62;
+        private: ::Chess::BoardSpace^ Board63;
+        private: ::Chess::BoardSpace^ Board64;
+        private: ::Chess::BoardSpace^ Board65;
+        private: ::Chess::BoardSpace^ Board66;
+        private: ::Chess::BoardSpace^ Board67;
+        private: ::Chess::BoardSpace^ Board68;
+        private: ::Chess::BoardSpace^ Board71;
+        private: ::Chess::BoardSpace^ Board72;
+        private: ::Chess::BoardSpace^ Board73;
+        private: ::Chess::BoardSpace^ Board74;
+        private: ::Chess::BoardSpace^ Board75;
+        private: ::Chess::BoardSpace^ Board76;
+        private: ::Chess::BoardSpace^ Board77;
+        private: ::Chess::BoardSpace^ Board78;
+        private: ::Chess::BoardSpace^ Board81;
+        private: ::Chess::BoardSpace^ Board82;
+        private: ::Chess::BoardSpace^ Board83;
+        private: ::Chess::BoardSpace^ Board84;
+        private: ::Chess::BoardSpace^ Board85;
+        private: ::Chess::BoardSpace^ Board86;
+        private: ::Chess::BoardSpace^ Board87;
+        private: ::Chess::BoardSpace^ Board88;
     };
 }
 

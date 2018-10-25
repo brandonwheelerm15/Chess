@@ -10,6 +10,9 @@
     d:DesignWidth="400">
 
     <Grid>
+        <Image x:Name="BoardDark" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Board_Light.png" Visibility="Collapsed" Stretch="Fill"/>
+        <Image x:Name="BoardLight" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Board_Dark.png" Visibility="Collapsed" Stretch="Fill"/>
+
 
     </Grid>
 </UserControl>

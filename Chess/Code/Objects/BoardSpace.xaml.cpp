@@ -25,3 +25,23 @@ BoardSpace::BoardSpace()
 {
 	InitializeComponent();
 }
+
+void BoardSpace::ChangeType(int x)
+{
+	if (x == 1)
+	{
+		this->SelectedType = 1;
+		this->BoardDark->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		this->BoardLight->Visibility = Windows::UI::Xaml::Visibility::Visible;
+	}
+	else if (x == 2) {
+		this->SelectedType = 2;
+		this->BoardDark->Visibility = Windows::UI::Xaml::Visibility::Visible;
+		this->BoardLight->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+	}
+	else {
+		this->SelectedType = 0;
+		this->BoardDark->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		this->BoardLight->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+	}
+}

@@ -222,7 +222,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\Board_Dark.PNG" />
+    <Image Include="Assets\Board_Light.PNG" />
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\logo.png" />
+    <Image Include="Assets\Piece.png" />
     <Image Include="Assets\SplashScreen.scale-200.png" />
     <Image Include="Assets\Square150x150Logo.scale-200.png" />
     <Image Include="Assets\Square44x44Logo.scale-200.png" />
@@ -284,6 +288,9 @@
     <ClCompile Include="Code\Pages\Start.xaml.cpp">
       <DependentUpon>Code\Pages\Start.xaml</DependentUpon>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\logo.xcf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

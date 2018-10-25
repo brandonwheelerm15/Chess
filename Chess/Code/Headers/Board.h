@@ -6,10 +6,10 @@
 
 #include <vector>
 
-using namespace Chess::BoardSpace;
+using namespace Chess::GameSpace;
 using namespace std;
 
-class Chess::BoardSpace::Board
+class Chess::GameSpace::Board
 {
 public:
 

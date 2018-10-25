@@ -9,7 +9,7 @@ namespace Chess
 	{
 		class Bridge;
 	}
-	namespace BoardSpace
+	namespace GameSpace
 	{
 		class Board;
 	}

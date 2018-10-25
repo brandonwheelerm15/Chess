@@ -9,6 +9,103 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <local:BoardSpace x:Name="Board11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board14" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board15" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board16" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board17" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board18" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board21" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board22" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board23" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board24" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board25" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board26" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board27" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board28" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board31" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board32" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board33" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board34" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board35" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board36" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board37" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board38" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board41" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board42" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board43" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board44" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board45" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board46" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board47" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board48" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board51" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board52" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board53" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board54" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board55" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board56" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board57" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board58" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board61" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board62" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board63" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board64" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board65" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board66" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board67" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board68" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board71" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board72" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board73" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board74" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board75" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board76" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board77" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board78" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+
+        <local:BoardSpace x:Name="Board81" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board82" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board83" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board84" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board85" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board86" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="Board88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+
 
     </Grid>
 </Page>

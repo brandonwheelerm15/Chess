@@ -7,6 +7,15 @@
 //------------------------------------------------------------------------------
 
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class Image;
+            }
+        }
+    }
+}
 
 namespace Chess
 {
@@ -28,6 +37,8 @@ namespace Chess
         bool _contentLoaded;
     
     
+        private: ::Windows::UI::Xaml::Controls::Image^ BoardDark;
+        private: ::Windows::UI::Xaml::Controls::Image^ BoardLight;
     };
 }
 

@@ -14,6 +14,70 @@ extern "C" __declspec(dllimport) int __stdcall IsDebuggerPresent();
 #endif
 
 #include "Code\Pages\Game.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardSpace.xaml.h"
 
 void ::Chess::Game::InitializeComponent()
 {
@@ -28,8 +92,329 @@ void ::Chess::Game::InitializeComponent()
 
 void ::Chess::Game::Connect(int __connectionId, ::Platform::Object^ __target)
 {
-    __connectionId;         // unreferenced 
-    __target;               // unreferenced
+    switch (__connectionId)
+    {
+    case 2:
+        {
+            this->Board11 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 3:
+        {
+            this->Board12 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 4:
+        {
+            this->Board13 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 5:
+        {
+            this->Board14 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 6:
+        {
+            this->Board15 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 7:
+        {
+            this->Board16 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 8:
+        {
+            this->Board17 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 9:
+        {
+            this->Board18 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 10:
+        {
+            this->Board21 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 11:
+        {
+            this->Board22 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 12:
+        {
+            this->Board23 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 13:
+        {
+            this->Board24 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 14:
+        {
+            this->Board25 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 15:
+        {
+            this->Board26 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 16:
+        {
+            this->Board27 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 17:
+        {
+            this->Board28 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 18:
+        {
+            this->Board31 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 19:
+        {
+            this->Board32 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 20:
+        {
+            this->Board33 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 21:
+        {
+            this->Board34 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 22:
+        {
+            this->Board35 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 23:
+        {
+            this->Board36 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 24:
+        {
+            this->Board37 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 25:
+        {
+            this->Board38 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 26:
+        {
+            this->Board41 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 27:
+        {
+            this->Board42 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 28:
+        {
+            this->Board43 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 29:
+        {
+            this->Board44 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 30:
+        {
+            this->Board45 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 31:
+        {
+            this->Board46 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 32:
+        {
+            this->Board47 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 33:
+        {
+            this->Board48 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 34:
+        {
+            this->Board51 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 35:
+        {
+            this->Board52 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 36:
+        {
+            this->Board53 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 37:
+        {
+            this->Board54 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 38:
+        {
+            this->Board55 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 39:
+        {
+            this->Board56 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 40:
+        {
+            this->Board57 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 41:
+        {
+            this->Board58 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 42:
+        {
+            this->Board61 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 43:
+        {
+            this->Board62 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 44:
+        {
+            this->Board63 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 45:
+        {
+            this->Board64 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 46:
+        {
+            this->Board65 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 47:
+        {
+            this->Board66 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 48:
+        {
+            this->Board67 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 49:
+        {
+            this->Board68 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 50:
+        {
+            this->Board71 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 51:
+        {
+            this->Board72 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 52:
+        {
+            this->Board73 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 53:
+        {
+            this->Board74 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 54:
+        {
+            this->Board75 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 55:
+        {
+            this->Board76 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 56:
+        {
+            this->Board77 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 57:
+        {
+            this->Board78 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 58:
+        {
+            this->Board81 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 59:
+        {
+            this->Board82 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 60:
+        {
+            this->Board83 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 61:
+        {
+            this->Board84 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 62:
+        {
+            this->Board85 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 63:
+        {
+            this->Board86 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 64:
+        {
+            this->Board87 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    case 65:
+        {
+            this->Board88 = safe_cast<::Chess::BoardSpace^>(__target);
+        }
+        break;
+    }
     _contentLoaded = true;
 }
 
