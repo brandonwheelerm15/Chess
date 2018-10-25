@@ -7,6 +7,19 @@
 //------------------------------------------------------------------------------
 
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class Grid;
+                ref class Button;
+                ref class TextBlock;
+                ref class ComboBox;
+                ref class TextBox;
+            }
+        }
+    }
+}
 
 namespace Chess
 {
@@ -28,6 +41,23 @@ namespace Chess
         bool _contentLoaded;
     
     
+        private: ::Windows::UI::Xaml::Controls::Grid^ grmMain;
+        private: ::Windows::UI::Xaml::Controls::Button^ btnStart;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblTitle;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblSubTitleOne;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblSubTitleTwo;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblDesc11;
+        private: ::Windows::UI::Xaml::Controls::ComboBox^ cboType1;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblDesc12;
+        private: ::Windows::UI::Xaml::Controls::ComboBox^ cboType2;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblDesc21;
+        private: ::Windows::UI::Xaml::Controls::ComboBox^ cboDiff1;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblDesc22;
+        private: ::Windows::UI::Xaml::Controls::ComboBox^ cboDiff2;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblDesc31;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ txtName1;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ lblDesc32;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ txtName2;
     };
 }
 

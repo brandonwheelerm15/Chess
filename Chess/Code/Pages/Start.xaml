@@ -8,7 +8,58 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="grmMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="400*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnStart" Content="start" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="250,10,250,34" FontSize="48" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Click="btnStart_Click"/>
+        <TextBlock x:Name="lblTitle" Text="A Chess Game" TextWrapping="Wrap" Margin="10,10,10,10" FontSize="72" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="lblSubTitleOne" Text="Player One (White)" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Margin="60,50,15,0" FontSize="36" Grid.Row="1" Grid.Column="1"/>
+        <TextBlock x:Name="lblSubTitleTwo" Text="Player Two (Black)" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,50,60,0" FontSize="36" Height="60" Grid.Row="1" Grid.Column="2"/>
+
+        <TextBlock x:Name="lblDesc11" Text="Type:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="62,132,15,0" FontSize="18" Height="25" Grid.Row="1" Grid.Column="1"/>
+        <ComboBox x:Name="cboType1" HorizontalAlignment="Stretch" Margin="60,157,18,0" VerticalAlignment="Top" FontSize="22" Grid.Row="1" Grid.Column="1" Height="50" SelectedIndex="-1" SelectionChanged="cboType1_SelectionChanged">
+            <TextBlock Text="Player"/>
+            <TextBlock Text="Computer"/>
+        </ComboBox>
+
+        <TextBlock x:Name="lblDesc12" Text="Type:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,132,73,0" FontSize="18" Height="25" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch"/>
+        <ComboBox x:Name="cboType2" HorizontalAlignment="Stretch" Margin="15,157,73,0" VerticalAlignment="Top" FontSize="22" Grid.Row="1" Grid.Column="2" Height="50" SelectedIndex="-1" SelectionChanged="cboType2_SelectionChanged">
+            <TextBlock Text="Player"/>
+            <TextBlock Text="Computer"/>
+        </ComboBox>
+
+        <TextBlock x:Name="lblDesc21" Text="Difficulty:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="62,232,15,0" FontSize="18" Height="25" Grid.Row="1" Grid.Column="1"/>
+        <ComboBox x:Name="cboDiff1" HorizontalAlignment="Stretch" Margin="60,258,18,0" VerticalAlignment="Top" FontSize="22" Grid.Row="1" Grid.Column="1" Height="50" SelectedIndex="-1">
+            <TextBlock Text="Easy"/>
+            <TextBlock Text="Medium"/>
+            <TextBlock Text="Hard"/>
+            <TextBlock Text="Unbeatable"/>
+        </ComboBox>
+
+        <TextBlock x:Name="lblDesc22" Text="Difficulty:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,232,73,0" FontSize="18" Height="25" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch"/>
+        <ComboBox x:Name="cboDiff2" HorizontalAlignment="Stretch" Margin="15,258,73,0" VerticalAlignment="Top" FontSize="22" Grid.Row="1" Grid.Column="2" Height="50" SelectedIndex="-1">
+            <TextBlock Text="Easy"/>
+            <TextBlock Text="Medium"/>
+            <TextBlock Text="Hard"/>
+            <TextBlock Text="Unbeatable"/>
+        </ComboBox>
+
+        <TextBlock x:Name="lblDesc31" Text="Name:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="62,332,15,0" FontSize="18" Height="25" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="txtName1" HorizontalAlignment="Stretch" Margin="60,358,18,0" VerticalAlignment="Top" FontSize="22" Grid.Row="1" Grid.Column="1" Height="50"/>
+
+        <TextBlock x:Name="lblDesc32" Text="Name:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,332,73,0" FontSize="18" Height="25" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch"/>
+        <TextBox x:Name="txtName2" HorizontalAlignment="Stretch" Margin="15,358,73,0" VerticalAlignment="Top" FontSize="22" Grid.Row="1" Grid.Column="2" Height="50"/>
+
+
 
     </Grid>
 </Page>

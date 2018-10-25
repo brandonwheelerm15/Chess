@@ -28,8 +28,100 @@ void ::Chess::Start::InitializeComponent()
 
 void ::Chess::Start::Connect(int __connectionId, ::Platform::Object^ __target)
 {
-    __connectionId;         // unreferenced 
-    __target;               // unreferenced
+    switch (__connectionId)
+    {
+    case 2:
+        {
+            this->grmMain = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
+        }
+        break;
+    case 3:
+        {
+            this->btnStart = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->btnStart))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Chess::Start::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&Start::btnStart_Click);
+        }
+        break;
+    case 4:
+        {
+            this->lblTitle = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 5:
+        {
+            this->lblSubTitleOne = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 6:
+        {
+            this->lblSubTitleTwo = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 7:
+        {
+            this->lblDesc11 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 8:
+        {
+            this->cboType1 = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(this->cboType1))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::Chess::Start::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&Start::cboType1_SelectionChanged);
+        }
+        break;
+    case 9:
+        {
+            this->lblDesc12 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 10:
+        {
+            this->cboType2 = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(this->cboType2))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::Chess::Start::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&Start::cboType2_SelectionChanged);
+        }
+        break;
+    case 11:
+        {
+            this->lblDesc21 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 12:
+        {
+            this->cboDiff1 = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
+        }
+        break;
+    case 13:
+        {
+            this->lblDesc22 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 14:
+        {
+            this->cboDiff2 = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
+        }
+        break;
+    case 15:
+        {
+            this->lblDesc31 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 16:
+        {
+            this->txtName1 = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+        }
+        break;
+    case 17:
+        {
+            this->lblDesc32 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 18:
+        {
+            this->txtName2 = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+        }
+        break;
+    }
     _contentLoaded = true;
 }
 
