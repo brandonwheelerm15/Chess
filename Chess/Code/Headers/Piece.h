@@ -10,6 +10,7 @@ class Chess::PieceSpace::Piece
 public:
 	Piece();
 
+	enum PieceColor { White, Black };
 	enum PieceTypes { Bishop, King, Knight, Pawn, Queen, Rook };
 	struct Loc
 	{
@@ -37,6 +38,7 @@ private:
 	virtual bool isValidMove();
 
 	PieceTypes Type;
+	PieceColor Color;
 
 	Loc Location;
 };
