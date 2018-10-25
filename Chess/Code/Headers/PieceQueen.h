@@ -8,7 +8,11 @@ using namespace Chess::PieceSpace;
 
 class Chess::PieceSpace::PieceQueen : public Chess::PieceSpace::Piece
 {
+protected:
+	bool isValidMove();
+
 public:
+	PieceQueen();
 
 private:
 

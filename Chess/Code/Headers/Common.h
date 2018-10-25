@@ -8,7 +8,8 @@ using namespace Chess::CommonSpace;
 class Chess::CommonSpace::Common
 {
 public:
-
+	enum DetectedOS { Windows, Unix, Unknown };
+	static DetectedOS DetectOS();
 private:
 
 };

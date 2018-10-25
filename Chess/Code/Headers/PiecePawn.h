@@ -8,7 +8,11 @@ using namespace Chess::PieceSpace;
 
 class Chess::PieceSpace::PiecePawn : public Chess::PieceSpace::Piece
 {
+protected:
+	bool isValidMove();
+
 public:
+	PiecePawn();
 
 private:
 
