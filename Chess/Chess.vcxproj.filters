@@ -106,6 +106,21 @@
     <Image Include="Assets\Piece.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_Click.PNG">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_Hover.PNG">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_Possible.PNG">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_PossibleClick.PNG">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_PossibleHover.PNG">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />

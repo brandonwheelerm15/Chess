@@ -10,6 +10,12 @@
     d:DesignWidth="400">
 
     <Grid>
+        <Image x:ConnectionId='2' x:Name="SelectedClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_Click.png" Visibility="Collapsed" Stretch="Fill"/>
+        <Image x:ConnectionId='3' x:Name="SelectedHover" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_Hover.png" Visibility="Collapsed" Stretch="Fill"/>
+        <Image x:ConnectionId='4' x:Name="SelectedPossible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_Possible.png" Visibility="Collapsed" Stretch="Fill"/>
+        <Image x:ConnectionId='5' x:Name="SelectedPossibleClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_PossibleClick.png" Visibility="Collapsed" Stretch="Fill"/>
+        <Image x:ConnectionId='6' x:Name="SelectedPossibleHover" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_PossibleHover.png" Visibility="Collapsed" Stretch="Fill"/>
+
 
     </Grid>
 </UserControl>

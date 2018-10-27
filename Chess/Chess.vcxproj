@@ -222,6 +222,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_Click.PNG" />
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_Hover.PNG" />
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_Possible.PNG" />
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_PossibleClick.PNG" />
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_PossibleHover.PNG" />
     <Image Include="Assets\Board_Dark.PNG" />
     <Image Include="Assets\Board_Light.PNG" />
     <Image Include="Assets\LockScreenLogo.scale-200.png" />

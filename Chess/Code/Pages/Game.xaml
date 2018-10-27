@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="grdMainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="10*"/>
@@ -34,78 +34,152 @@
             <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <local:BoardSpace x:Name="Board11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board14" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board15" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board16" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board17" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board18" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
 
-        <local:BoardSpace x:Name="Board21" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board22" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board23" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board24" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board25" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board26" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board27" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board28" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace14" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace15" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace16" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace17" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace18" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:BoardSpace x:Name="Board31" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board32" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board33" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board34" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board35" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board36" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board37" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board38" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace21" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace22" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace23" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace24" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace25" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace26" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace27" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace28" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:BoardSpace x:Name="Board41" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board42" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board43" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board44" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board45" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board46" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board47" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board48" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace31" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace32" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace33" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace34" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace35" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace36" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace37" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace38" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:BoardSpace x:Name="Board51" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board52" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board53" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board54" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board55" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board56" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board57" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board58" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace41" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace42" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace43" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace44" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace45" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace46" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace47" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace48" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:BoardSpace x:Name="Board61" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board62" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board63" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board64" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board65" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board66" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board67" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board68" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace51" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace52" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace53" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace54" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace55" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace56" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace57" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace58" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:BoardSpace x:Name="Board71" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board72" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board73" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board74" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board75" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board76" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board77" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board78" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace61" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace62" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace63" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace64" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace65" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace66" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace67" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace68" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:BoardSpace x:Name="Board81" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board82" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board83" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board84" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board85" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board86" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
-        <local:BoardSpace x:Name="Board88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:BoardSpace x:Name="BoardSpace71" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace72" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace73" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace74" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace75" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace76" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace77" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace78" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
+        <local:BoardSpace x:Name="BoardSpace81" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace82" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace83" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace84" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace85" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace86" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardSpace x:Name="BoardSpace88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+
+
+        <local:BoardOutline x:Name="BoardOutline11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline14" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline15" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline16" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline17" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline18" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline21" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline22" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline23" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline24" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline25" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline26" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline27" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline28" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline31" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline32" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline33" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline34" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline35" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline36" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline37" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline38" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline41" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline42" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline43" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline44" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline45" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline46" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline47" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline48" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline51" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline52" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline53" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline54" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline55" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline56" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline57" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline58" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline61" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline62" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline63" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline64" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline65" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline66" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline67" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline68" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline71" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline72" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline73" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline74" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline75" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline76" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline77" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline78" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
+        <local:BoardOutline x:Name="BoardOutline81" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline82" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline83" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline84" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline85" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline86" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+        <local:BoardOutline x:Name="BoardOutline88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
     </Grid>
 </Page>

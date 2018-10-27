@@ -78,6 +78,70 @@ extern "C" __declspec(dllimport) int __stdcall IsDebuggerPresent();
 #include "Code\Objects\BoardSpace.xaml.h"
 #include "Code\Objects\BoardSpace.xaml.h"
 #include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\BoardOutline.xaml.h"
 
 void ::Chess::Game::InitializeComponent()
 {
@@ -96,322 +160,1415 @@ void ::Chess::Game::Connect(int __connectionId, ::Platform::Object^ __target)
     {
     case 2:
         {
-            this->Board11 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->grdMainGrid = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
     case 3:
         {
-            this->Board12 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace11 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace11))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace11))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace11))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 4:
         {
-            this->Board13 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace12 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace12))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace12))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace12))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 5:
         {
-            this->Board14 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace13 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace13))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace13))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace13))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 6:
         {
-            this->Board15 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace14 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace14))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace14))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace14))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 7:
         {
-            this->Board16 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace15 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace15))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace15))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace15))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 8:
         {
-            this->Board17 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace16 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace16))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace16))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace16))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 9:
         {
-            this->Board18 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace17 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace17))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace17))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace17))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 10:
         {
-            this->Board21 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace18 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace18))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace18))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace18))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 11:
         {
-            this->Board22 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace21 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace21))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace21))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace21))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 12:
         {
-            this->Board23 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace22 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace22))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace22))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace22))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 13:
         {
-            this->Board24 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace23 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace23))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace23))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace23))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 14:
         {
-            this->Board25 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace24 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace24))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace24))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace24))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 15:
         {
-            this->Board26 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace25 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace25))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace25))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace25))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 16:
         {
-            this->Board27 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace26 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace26))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace26))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace26))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 17:
         {
-            this->Board28 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace27 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace27))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace27))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace27))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 18:
         {
-            this->Board31 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace28 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace28))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace28))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace28))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 19:
         {
-            this->Board32 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace31 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace31))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace31))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace31))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 20:
         {
-            this->Board33 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace32 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace32))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace32))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace32))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 21:
         {
-            this->Board34 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace33 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace33))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace33))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace33))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 22:
         {
-            this->Board35 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace34 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace34))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace34))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace34))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 23:
         {
-            this->Board36 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace35 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace35))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace35))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace35))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 24:
         {
-            this->Board37 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace36 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace36))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace36))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace36))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 25:
         {
-            this->Board38 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace37 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace37))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace37))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace37))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 26:
         {
-            this->Board41 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace38 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace38))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace38))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace38))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 27:
         {
-            this->Board42 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace41 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace41))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace41))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace41))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 28:
         {
-            this->Board43 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace42 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace42))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace42))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace42))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 29:
         {
-            this->Board44 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace43 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace43))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace43))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace43))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 30:
         {
-            this->Board45 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace44 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace44))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace44))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace44))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 31:
         {
-            this->Board46 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace45 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace45))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace45))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace45))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 32:
         {
-            this->Board47 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace46 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace46))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace46))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace46))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 33:
         {
-            this->Board48 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace47 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace47))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace47))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace47))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 34:
         {
-            this->Board51 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace48 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace48))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace48))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace48))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 35:
         {
-            this->Board52 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace51 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace51))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace51))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace51))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 36:
         {
-            this->Board53 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace52 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace52))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace52))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace52))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 37:
         {
-            this->Board54 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace53 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace53))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace53))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace53))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 38:
         {
-            this->Board55 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace54 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace54))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace54))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace54))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 39:
         {
-            this->Board56 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace55 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace55))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace55))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace55))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 40:
         {
-            this->Board57 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace56 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace56))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace56))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace56))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 41:
         {
-            this->Board58 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace57 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace57))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace57))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace57))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 42:
         {
-            this->Board61 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace58 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace58))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace58))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace58))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 43:
         {
-            this->Board62 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace61 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace61))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace61))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace61))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 44:
         {
-            this->Board63 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace62 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace62))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace62))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace62))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 45:
         {
-            this->Board64 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace63 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace63))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace63))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace63))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 46:
         {
-            this->Board65 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace64 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace64))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace64))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace64))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 47:
         {
-            this->Board66 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace65 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace65))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace65))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace65))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 48:
         {
-            this->Board67 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace66 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace66))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace66))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace66))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 49:
         {
-            this->Board68 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace67 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace67))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace67))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace67))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 50:
         {
-            this->Board71 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace68 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace68))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace68))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace68))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 51:
         {
-            this->Board72 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace71 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace71))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace71))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace71))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 52:
         {
-            this->Board73 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace72 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace72))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace72))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace72))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 53:
         {
-            this->Board74 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace73 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace73))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace73))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace73))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 54:
         {
-            this->Board75 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace74 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace74))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace74))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace74))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 55:
         {
-            this->Board76 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace75 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace75))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace75))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace75))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 56:
         {
-            this->Board77 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace76 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace76))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace76))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace76))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 57:
         {
-            this->Board78 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace77 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace77))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace77))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace77))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 58:
         {
-            this->Board81 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace78 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace78))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace78))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace78))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 59:
         {
-            this->Board82 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace81 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace81))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace81))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace81))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 60:
         {
-            this->Board83 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace82 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace82))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace82))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace82))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 61:
         {
-            this->Board84 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace83 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace83))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace83))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace83))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 62:
         {
-            this->Board85 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace84 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace84))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace84))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace84))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 63:
         {
-            this->Board86 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace85 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace85))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace85))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace85))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 64:
         {
-            this->Board87 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace86 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace86))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace86))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace86))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     case 65:
         {
-            this->Board88 = safe_cast<::Chess::BoardSpace^>(__target);
+            this->BoardSpace87 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace87))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace87))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace87))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 66:
+        {
+            this->BoardSpace88 = safe_cast<::Chess::BoardSpace^>(__target);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace88))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace88))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardSpace^>(this->BoardSpace88))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 67:
+        {
+            this->BoardOutline11 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline11))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline11))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline11))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 68:
+        {
+            this->BoardOutline12 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline12))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline12))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline12))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 69:
+        {
+            this->BoardOutline13 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline13))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline13))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline13))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 70:
+        {
+            this->BoardOutline14 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline14))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline14))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline14))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 71:
+        {
+            this->BoardOutline15 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline15))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline15))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline15))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 72:
+        {
+            this->BoardOutline16 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline16))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline16))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline16))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 73:
+        {
+            this->BoardOutline17 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline17))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline17))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline17))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 74:
+        {
+            this->BoardOutline18 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline18))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline18))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline18))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 75:
+        {
+            this->BoardOutline21 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline21))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline21))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline21))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 76:
+        {
+            this->BoardOutline22 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline22))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline22))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline22))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 77:
+        {
+            this->BoardOutline23 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline23))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline23))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline23))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 78:
+        {
+            this->BoardOutline24 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline24))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline24))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline24))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 79:
+        {
+            this->BoardOutline25 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline25))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline25))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline25))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 80:
+        {
+            this->BoardOutline26 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline26))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline26))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline26))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 81:
+        {
+            this->BoardOutline27 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline27))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline27))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline27))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 82:
+        {
+            this->BoardOutline28 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline28))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline28))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline28))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 83:
+        {
+            this->BoardOutline31 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline31))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline31))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline31))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 84:
+        {
+            this->BoardOutline32 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline32))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline32))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline32))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 85:
+        {
+            this->BoardOutline33 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline33))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline33))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline33))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 86:
+        {
+            this->BoardOutline34 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline34))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline34))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline34))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 87:
+        {
+            this->BoardOutline35 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline35))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline35))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline35))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 88:
+        {
+            this->BoardOutline36 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline36))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline36))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline36))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 89:
+        {
+            this->BoardOutline37 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline37))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline37))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline37))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 90:
+        {
+            this->BoardOutline38 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline38))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline38))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline38))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 91:
+        {
+            this->BoardOutline41 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline41))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline41))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline41))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 92:
+        {
+            this->BoardOutline42 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline42))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline42))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline42))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 93:
+        {
+            this->BoardOutline43 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline43))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline43))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline43))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 94:
+        {
+            this->BoardOutline44 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline44))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline44))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline44))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 95:
+        {
+            this->BoardOutline45 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline45))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline45))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline45))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 96:
+        {
+            this->BoardOutline46 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline46))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline46))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline46))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 97:
+        {
+            this->BoardOutline47 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline47))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline47))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline47))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 98:
+        {
+            this->BoardOutline48 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline48))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline48))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline48))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 99:
+        {
+            this->BoardOutline51 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline51))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline51))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline51))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 100:
+        {
+            this->BoardOutline52 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline52))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline52))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline52))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 101:
+        {
+            this->BoardOutline53 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline53))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline53))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline53))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 102:
+        {
+            this->BoardOutline54 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline54))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline54))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline54))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 103:
+        {
+            this->BoardOutline55 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline55))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline55))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline55))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 104:
+        {
+            this->BoardOutline56 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline56))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline56))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline56))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 105:
+        {
+            this->BoardOutline57 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline57))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline57))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline57))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 106:
+        {
+            this->BoardOutline58 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline58))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline58))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline58))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 107:
+        {
+            this->BoardOutline61 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline61))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline61))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline61))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 108:
+        {
+            this->BoardOutline62 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline62))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline62))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline62))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 109:
+        {
+            this->BoardOutline63 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline63))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline63))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline63))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 110:
+        {
+            this->BoardOutline64 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline64))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline64))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline64))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 111:
+        {
+            this->BoardOutline65 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline65))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline65))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline65))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 112:
+        {
+            this->BoardOutline66 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline66))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline66))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline66))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 113:
+        {
+            this->BoardOutline67 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline67))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline67))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline67))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 114:
+        {
+            this->BoardOutline68 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline68))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline68))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline68))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 115:
+        {
+            this->BoardOutline71 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline71))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline71))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline71))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 116:
+        {
+            this->BoardOutline72 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline72))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline72))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline72))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 117:
+        {
+            this->BoardOutline73 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline73))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline73))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline73))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 118:
+        {
+            this->BoardOutline74 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline74))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline74))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline74))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 119:
+        {
+            this->BoardOutline75 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline75))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline75))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline75))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 120:
+        {
+            this->BoardOutline76 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline76))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline76))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline76))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 121:
+        {
+            this->BoardOutline77 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline77))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline77))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline77))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 122:
+        {
+            this->BoardOutline78 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline78))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline78))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline78))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 123:
+        {
+            this->BoardOutline81 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline81))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline81))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline81))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 124:
+        {
+            this->BoardOutline82 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline82))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline82))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline82))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 125:
+        {
+            this->BoardOutline83 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline83))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline83))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline83))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 126:
+        {
+            this->BoardOutline84 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline84))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline84))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline84))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 127:
+        {
+            this->BoardOutline85 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline85))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline85))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline85))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 128:
+        {
+            this->BoardOutline86 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline86))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline86))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline86))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 129:
+        {
+            this->BoardOutline87 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline87))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline87))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline87))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 130:
+        {
+            this->BoardOutline88 = safe_cast<::Chess::BoardOutline^>(__target);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline88))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline88))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::BoardOutline^>(this->BoardOutline88))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;
     }

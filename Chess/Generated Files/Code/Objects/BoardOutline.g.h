@@ -7,6 +7,15 @@
 //------------------------------------------------------------------------------
 
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class Image;
+            }
+        }
+    }
+}
 
 namespace Chess
 {
@@ -28,6 +37,11 @@ namespace Chess
         bool _contentLoaded;
     
     
+        private: ::Windows::UI::Xaml::Controls::Image^ SelectedClick;
+        private: ::Windows::UI::Xaml::Controls::Image^ SelectedHover;
+        private: ::Windows::UI::Xaml::Controls::Image^ SelectedPossible;
+        private: ::Windows::UI::Xaml::Controls::Image^ SelectedPossibleClick;
+        private: ::Windows::UI::Xaml::Controls::Image^ SelectedPossibleHover;
     };
 }
 

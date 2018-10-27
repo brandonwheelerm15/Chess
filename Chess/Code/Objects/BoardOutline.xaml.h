@@ -14,5 +14,9 @@ namespace Chess
 	{
 	public:
 		BoardOutline();
+
+		void ChangeType(int x);
+	private:
+		int SelectedType = 0;
 	};
 }
