@@ -75,6 +75,8 @@ private:
 	Vector<BoardSpace^>^ GameElement_Space7 = ref new Vector<BoardSpace^>();
 	Vector<BoardSpace^>^ GameElement_Space8 = ref new Vector<BoardSpace^>();
 
+	std::vector< Vector<BoardSpace^>^ > GameElement_SpaceAll;
+
 	Vector<BoardOutline^>^ GameElement_Outline1 = ref new Vector<BoardOutline^>();
 	Vector<BoardOutline^>^ GameElement_Outline2 = ref new Vector<BoardOutline^>();
 	Vector<BoardOutline^>^ GameElement_Outline3 = ref new Vector<BoardOutline^>();
@@ -83,6 +85,8 @@ private:
 	Vector<BoardOutline^>^ GameElement_Outline6 = ref new Vector<BoardOutline^>();
 	Vector<BoardOutline^>^ GameElement_Outline7 = ref new Vector<BoardOutline^>();
 	Vector<BoardOutline^>^ GameElement_Outline8 = ref new Vector<BoardOutline^>();
+
+	std::vector< Vector<BoardOutline^>^ > GameElement_OutlineAll;
 
 };
 
