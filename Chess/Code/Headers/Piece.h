@@ -42,5 +42,4 @@ private:
 
 	Loc Location;
 };
-
 #endif

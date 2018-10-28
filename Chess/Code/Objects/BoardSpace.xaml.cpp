@@ -26,7 +26,7 @@ BoardSpace::BoardSpace()
 	InitializeComponent();
 }
 
-void BoardSpace::ChangeType(int x)
+void BoardSpace::setSelectedType(int x)
 {
 	if (x == 1)
 	{
@@ -44,4 +44,9 @@ void BoardSpace::ChangeType(int x)
 		this->BoardDark->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 		this->BoardLight->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 	}
+}
+
+int BoardSpace::getSelectedType()
+{
+	return this->SelectedType;
 }

@@ -15,7 +15,8 @@ namespace Chess
 	public:
 		BoardSpace();
 
-		void ChangeType(int x);
+		void setSelectedType(int x);
+		int getSelectedType();
 	private:
 		int SelectedType = 0;
 	};

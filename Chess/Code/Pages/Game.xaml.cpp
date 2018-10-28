@@ -7,6 +7,7 @@
 #include "Game.xaml.h"
 #include "Code\Objects\BoardOutline.xaml.h"
 #include "Code\Objects\BoardSpace.xaml.h"
+#include "Code\Headers\Board.h"
 
 #include <locale>
 #include <codecvt>
@@ -25,6 +26,7 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 using namespace Windows::UI::Popups;
+using namespace Platform::Collections;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,296 +34,300 @@ Game::Game()
 {
 	InitializeComponent();
 
-	
+	Board CurrentBoard;
 
-	BoardSpace11->ChangeType(1);
-	BoardSpace12->ChangeType(2);
-	BoardSpace13->ChangeType(1);
-	BoardSpace14->ChangeType(2);
-	BoardSpace15->ChangeType(1);
-	BoardSpace16->ChangeType(2);
-	BoardSpace17->ChangeType(1);
-	BoardSpace18->ChangeType(2);
+	CurrentBoard.InitBoard();
 
-	BoardSpace21->ChangeType(2);
-	BoardSpace22->ChangeType(1);
-	BoardSpace23->ChangeType(2);
-	BoardSpace24->ChangeType(1);
-	BoardSpace25->ChangeType(2);
-	BoardSpace26->ChangeType(1);
-	BoardSpace27->ChangeType(2);
-	BoardSpace28->ChangeType(1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace11, 1, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace12, 1, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace13, 1, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace14, 1, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace15, 1, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace16, 1, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace17, 1, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace18, 1, 8);
 
-	BoardSpace31->ChangeType(1);
-	BoardSpace32->ChangeType(2);
-	BoardSpace33->ChangeType(1);
-	BoardSpace34->ChangeType(2);
-	BoardSpace35->ChangeType(1);
-	BoardSpace36->ChangeType(2);
-	BoardSpace37->ChangeType(1);
-	BoardSpace38->ChangeType(2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace21, 2, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace22, 2, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace23, 2, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace24, 2, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace25, 2, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace26, 2, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace27, 2, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace28, 2, 8);
 
-	BoardSpace41->ChangeType(2);
-	BoardSpace42->ChangeType(1);
-	BoardSpace43->ChangeType(2);
-	BoardSpace44->ChangeType(1);
-	BoardSpace45->ChangeType(2);
-	BoardSpace46->ChangeType(1);
-	BoardSpace47->ChangeType(2);
-	BoardSpace48->ChangeType(1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace31, 3, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace32, 3, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace33, 3, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace34, 3, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace35, 3, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace36, 3, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace37, 3, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace38, 3, 8);
 
-	BoardSpace51->ChangeType(1);
-	BoardSpace52->ChangeType(2);
-	BoardSpace53->ChangeType(1);
-	BoardSpace54->ChangeType(2);
-	BoardSpace55->ChangeType(1);
-	BoardSpace56->ChangeType(2);
-	BoardSpace57->ChangeType(1);
-	BoardSpace58->ChangeType(2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace41, 4, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace42, 4, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace43, 4, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace44, 4, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace45, 4, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace46, 4, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace47, 4, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace48, 4, 8);
 
-	BoardSpace61->ChangeType(2);
-	BoardSpace62->ChangeType(1);
-	BoardSpace63->ChangeType(2);
-	BoardSpace64->ChangeType(1);
-	BoardSpace65->ChangeType(2);
-	BoardSpace66->ChangeType(1);
-	BoardSpace67->ChangeType(2);
-	BoardSpace68->ChangeType(1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace51, 5, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace52, 5, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace53, 5, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace54, 5, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace55, 5, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace56, 5, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace57, 5, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace58, 5, 8);
 
-	BoardSpace71->ChangeType(1);
-	BoardSpace72->ChangeType(2);
-	BoardSpace73->ChangeType(1);
-	BoardSpace74->ChangeType(2);
-	BoardSpace75->ChangeType(1);
-	BoardSpace76->ChangeType(2);
-	BoardSpace77->ChangeType(1);
-	BoardSpace78->ChangeType(2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace61, 6, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace62, 6, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace63, 6, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace64, 6, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace65, 6, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace66, 6, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace67, 6, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace68, 6, 8);
 
-	BoardSpace81->ChangeType(2);
-	BoardSpace82->ChangeType(1);
-	BoardSpace83->ChangeType(2);
-	BoardSpace84->ChangeType(1);
-	BoardSpace85->ChangeType(2);
-	BoardSpace86->ChangeType(1);
-	BoardSpace87->ChangeType(2);
-	BoardSpace88->ChangeType(1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace71, 7, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace72, 7, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace73, 7, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace74, 7, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace75, 7, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace76, 7, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace77, 7, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace78, 7, 8);
 
-
-
-	BoardOutline11->ChangeType(0);
-	BoardOutline12->ChangeType(0);
-	BoardOutline13->ChangeType(0);
-	BoardOutline14->ChangeType(0);
-	BoardOutline15->ChangeType(0);
-	BoardOutline16->ChangeType(0);
-	BoardOutline17->ChangeType(0);
-	BoardOutline18->ChangeType(0);
-
-	BoardOutline21->ChangeType(0);
-	BoardOutline22->ChangeType(0);
-	BoardOutline23->ChangeType(0);
-	BoardOutline24->ChangeType(0);
-	BoardOutline25->ChangeType(0);
-	BoardOutline26->ChangeType(0);
-	BoardOutline27->ChangeType(0);
-	BoardOutline28->ChangeType(0);
-
-	BoardOutline31->ChangeType(0);
-	BoardOutline32->ChangeType(0);
-	BoardOutline33->ChangeType(0);
-	BoardOutline34->ChangeType(0);
-	BoardOutline35->ChangeType(0);
-	BoardOutline36->ChangeType(0);
-	BoardOutline37->ChangeType(0);
-	BoardOutline38->ChangeType(0);
-
-	BoardOutline41->ChangeType(0);
-	BoardOutline42->ChangeType(0);
-	BoardOutline43->ChangeType(0);
-	BoardOutline44->ChangeType(0);
-	BoardOutline45->ChangeType(0);
-	BoardOutline46->ChangeType(0);
-	BoardOutline47->ChangeType(0);
-	BoardOutline48->ChangeType(0);
-
-	BoardOutline51->ChangeType(0);
-	BoardOutline52->ChangeType(0);
-	BoardOutline53->ChangeType(0);
-	BoardOutline54->ChangeType(0);
-	BoardOutline55->ChangeType(0);
-	BoardOutline56->ChangeType(0);
-	BoardOutline57->ChangeType(0);
-	BoardOutline58->ChangeType(0);
-
-	BoardOutline61->ChangeType(0);
-	BoardOutline62->ChangeType(0);
-	BoardOutline63->ChangeType(0);
-	BoardOutline64->ChangeType(0);
-	BoardOutline65->ChangeType(0);
-	BoardOutline66->ChangeType(0);
-	BoardOutline67->ChangeType(0);
-	BoardOutline68->ChangeType(0);
-
-	BoardOutline71->ChangeType(0);
-	BoardOutline72->ChangeType(0);
-	BoardOutline73->ChangeType(0);
-	BoardOutline74->ChangeType(0);
-	BoardOutline75->ChangeType(0);
-	BoardOutline76->ChangeType(0);
-	BoardOutline77->ChangeType(0);
-	BoardOutline78->ChangeType(0);
-
-	BoardOutline81->ChangeType(0);
-	BoardOutline82->ChangeType(0);
-	BoardOutline83->ChangeType(0);
-	BoardOutline84->ChangeType(0);
-	BoardOutline85->ChangeType(0);
-	BoardOutline86->ChangeType(0);
-	BoardOutline87->ChangeType(0);
-	BoardOutline88->ChangeType(0);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace81, 8, 1);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace82, 8, 2);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace83, 8, 3);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace84, 8, 4);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace85, 8, 5);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace86, 8, 6);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace87, 8, 7);
+	CurrentBoard.setGameElement_SpaceSpecific(BoardSpace88, 8, 8);
 
 
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline11, 1, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline12, 1, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline13, 1, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline14, 1, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline15, 1, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline16, 1, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline17, 1, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline18, 1, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline21, 2, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline22, 2, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline23, 2, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline24, 2, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline25, 2, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline26, 2, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline27, 2, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline28, 2, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline31, 3, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline32, 3, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline33, 3, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline34, 3, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline35, 3, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline36, 3, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline37, 3, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline38, 3, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline41, 4, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline42, 4, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline43, 4, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline44, 4, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline45, 4, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline46, 4, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline47, 4, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline48, 4, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline51, 5, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline52, 5, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline53, 5, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline54, 5, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline55, 5, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline56, 5, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline57, 5, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline58, 5, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline61, 6, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline62, 6, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline63, 6, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline64, 6, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline65, 6, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline66, 6, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline67, 6, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline68, 6, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline71, 7, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline72, 7, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline73, 7, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline74, 7, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline75, 7, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline76, 7, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline77, 7, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline78, 7, 8);
+
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline81, 8, 1);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline82, 8, 2);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline83, 8, 3);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline84, 8, 4);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline85, 8, 5);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline86, 8, 6);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline87, 8, 7);
+	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline88, 8, 8);
+
+
+
+	CurrentBoard.ResetBoard();
 }
 
-
-void Chess::Game::ChangeBoardSpaceType(std::string ssname, int sw)
+BoardOutline^ Chess::Game::FindBoardSpaceType(std::string ssname)
 {
 	if (strstr(ssname.c_str(), "11"))
-		BoardOutline11->ChangeType(sw);
+		return BoardOutline11;
 	if (strstr(ssname.c_str(), "12"))
-		BoardOutline12->ChangeType(sw);
+		return BoardOutline12;
 	if (strstr(ssname.c_str(), "13"))
-		BoardOutline13->ChangeType(sw);
+		return BoardOutline13;
 	if (strstr(ssname.c_str(), "14"))
-		BoardOutline14->ChangeType(sw);
+		return BoardOutline14;
 	if (strstr(ssname.c_str(), "15"))
-		BoardOutline15->ChangeType(sw);
+		return BoardOutline15;
 	if (strstr(ssname.c_str(), "16"))
-		BoardOutline16->ChangeType(sw);
+		return BoardOutline16;
 	if (strstr(ssname.c_str(), "17"))
-		BoardOutline17->ChangeType(sw);
+		return BoardOutline17;
 	if (strstr(ssname.c_str(), "18"))
-		BoardOutline18->ChangeType(sw);
+		return BoardOutline18;
 
 	if (strstr(ssname.c_str(), "21"))
-		BoardOutline21->ChangeType(sw);
+		return BoardOutline21;
 	if (strstr(ssname.c_str(), "22"))
-		BoardOutline22->ChangeType(sw);
+		return BoardOutline22;
 	if (strstr(ssname.c_str(), "23"))
-		BoardOutline23->ChangeType(sw);
+		return BoardOutline23;
 	if (strstr(ssname.c_str(), "24"))
-		BoardOutline24->ChangeType(sw);
+		return BoardOutline24;
 	if (strstr(ssname.c_str(), "25"))
-		BoardOutline25->ChangeType(sw);
+		return BoardOutline25;
 	if (strstr(ssname.c_str(), "26"))
-		BoardOutline26->ChangeType(sw);
+		return BoardOutline26;
 	if (strstr(ssname.c_str(), "27"))
-		BoardOutline27->ChangeType(sw);
+		return BoardOutline27;
 	if (strstr(ssname.c_str(), "28"))
-		BoardOutline28->ChangeType(sw);
+		return BoardOutline28;
 
 	if (strstr(ssname.c_str(), "31"))
-		BoardOutline31->ChangeType(sw);
+		return BoardOutline31;
 	if (strstr(ssname.c_str(), "32"))
-		BoardOutline32->ChangeType(sw);
+		return BoardOutline32;
 	if (strstr(ssname.c_str(), "33"))
-		BoardOutline33->ChangeType(sw);
+		return BoardOutline33;
 	if (strstr(ssname.c_str(), "34"))
-		BoardOutline34->ChangeType(sw);
+		return BoardOutline34;
 	if (strstr(ssname.c_str(), "35"))
-		BoardOutline35->ChangeType(sw);
+		return BoardOutline35;
 	if (strstr(ssname.c_str(), "36"))
-		BoardOutline36->ChangeType(sw);
+		return BoardOutline36;
 	if (strstr(ssname.c_str(), "37"))
-		BoardOutline37->ChangeType(sw);
+		return BoardOutline37;
 	if (strstr(ssname.c_str(), "38"))
-		BoardOutline38->ChangeType(sw);
+		return BoardOutline38;
 
 	if (strstr(ssname.c_str(), "41"))
-		BoardOutline41->ChangeType(sw);
+		return BoardOutline41;
 	if (strstr(ssname.c_str(), "42"))
-		BoardOutline42->ChangeType(sw);
+		return BoardOutline42;
 	if (strstr(ssname.c_str(), "43"))
-		BoardOutline43->ChangeType(sw);
+		return BoardOutline43;
 	if (strstr(ssname.c_str(), "44"))
-		BoardOutline44->ChangeType(sw);
+		return BoardOutline44;
 	if (strstr(ssname.c_str(), "45"))
-		BoardOutline45->ChangeType(sw);
+		return BoardOutline45;
 	if (strstr(ssname.c_str(), "46"))
-		BoardOutline46->ChangeType(sw);
+		return BoardOutline46;
 	if (strstr(ssname.c_str(), "47"))
-		BoardOutline47->ChangeType(sw);
+		return BoardOutline47;
 	if (strstr(ssname.c_str(), "48"))
-		BoardOutline48->ChangeType(sw);
+		return BoardOutline48;
 
 	if (strstr(ssname.c_str(), "51"))
-		BoardOutline51->ChangeType(sw);
+		return BoardOutline51;
 	if (strstr(ssname.c_str(), "52"))
-		BoardOutline52->ChangeType(sw);
+		return BoardOutline52;
 	if (strstr(ssname.c_str(), "53"))
-		BoardOutline53->ChangeType(sw);
+		return BoardOutline53;
 	if (strstr(ssname.c_str(), "54"))
-		BoardOutline54->ChangeType(sw);
+		return BoardOutline54;
 	if (strstr(ssname.c_str(), "55"))
-		BoardOutline55->ChangeType(sw);
+		return BoardOutline55;
 	if (strstr(ssname.c_str(), "56"))
-		BoardOutline56->ChangeType(sw);
+		return BoardOutline56;
 	if (strstr(ssname.c_str(), "57"))
-		BoardOutline57->ChangeType(sw);
+		return BoardOutline57;
 	if (strstr(ssname.c_str(), "58"))
-		BoardOutline58->ChangeType(sw);
+		return BoardOutline58;
 
 	if (strstr(ssname.c_str(), "61"))
-		BoardOutline61->ChangeType(sw);
+		return BoardOutline61;
 	if (strstr(ssname.c_str(), "62"))
-		BoardOutline62->ChangeType(sw);
+		return BoardOutline62;
 	if (strstr(ssname.c_str(), "63"))
-		BoardOutline63->ChangeType(sw);
+		return BoardOutline63;
 	if (strstr(ssname.c_str(), "64"))
-		BoardOutline64->ChangeType(sw);
+		return BoardOutline64;
 	if (strstr(ssname.c_str(), "65"))
-		BoardOutline65->ChangeType(sw);
+		return BoardOutline65;
 	if (strstr(ssname.c_str(), "66"))
-		BoardOutline66->ChangeType(sw);
+		return BoardOutline66;
 	if (strstr(ssname.c_str(), "67"))
-		BoardOutline67->ChangeType(sw);
+		return BoardOutline67;
 	if (strstr(ssname.c_str(), "68"))
-		BoardOutline68->ChangeType(sw);
+		return BoardOutline68;
 
 	if (strstr(ssname.c_str(), "71"))
-		BoardOutline71->ChangeType(sw);
+		return BoardOutline71;
 	if (strstr(ssname.c_str(), "72"))
-		BoardOutline72->ChangeType(sw);
+		return BoardOutline72;
 	if (strstr(ssname.c_str(), "73"))
-		BoardOutline73->ChangeType(sw);
+		return BoardOutline73;
 	if (strstr(ssname.c_str(), "74"))
-		BoardOutline74->ChangeType(sw);
+		return BoardOutline74;
 	if (strstr(ssname.c_str(), "75"))
-		BoardOutline75->ChangeType(sw);
+		return BoardOutline75;
 	if (strstr(ssname.c_str(), "76"))
-		BoardOutline76->ChangeType(sw);
+		return BoardOutline76;
 	if (strstr(ssname.c_str(), "77"))
-		BoardOutline77->ChangeType(sw);
+		return BoardOutline77;
 	if (strstr(ssname.c_str(), "78"))
-		BoardOutline78->ChangeType(sw);
+		return BoardOutline78;
 
 	if (strstr(ssname.c_str(), "81"))
-		BoardOutline81->ChangeType(sw);
+		return BoardOutline81;
 	if (strstr(ssname.c_str(), "82"))
-		BoardOutline82->ChangeType(sw);
+		return BoardOutline82;
 	if (strstr(ssname.c_str(), "83"))
-		BoardOutline83->ChangeType(sw);
+		return BoardOutline83;
 	if (strstr(ssname.c_str(), "84"))
-		BoardOutline84->ChangeType(sw);
+		return BoardOutline84;
 	if (strstr(ssname.c_str(), "85"))
-		BoardOutline85->ChangeType(sw);
+		return BoardOutline85;
 	if (strstr(ssname.c_str(), "86"))
-		BoardOutline86->ChangeType(sw);
+		return BoardOutline86;
 	if (strstr(ssname.c_str(), "87"))
-		BoardOutline87->ChangeType(sw);
+		return BoardOutline87;
 	if (strstr(ssname.c_str(), "88"))
-		BoardOutline88->ChangeType(sw);
+		return BoardOutline88;
 }
+
 
 void Chess::Game::BoardSpace_PointerEntered(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
@@ -336,8 +342,10 @@ void Chess::Game::BoardSpace_PointerEntered(Platform::Object^ sender, Windows::U
 	std::string ssname = converter.to_bytes(sname); //convert to std::string
 
 
-	ChangeBoardSpaceType(ssname, 2);
-	
+	BoardOutline^ triggered = FindBoardSpaceType(ssname);
+	if (triggered->getSelectedType() != 1) {
+		triggered->setSelectedType(2);
+	}
 }
 
 
@@ -352,9 +360,12 @@ void Chess::Game::BoardSpace_PointerExited(Platform::Object^ sender, Windows::UI
 	std::wstring_convert<convert_type, wchar_t> converter; //conversion of std::wstring to std::string
 	std::string ssname = converter.to_bytes(sname); //convert to std::string
 
-
-	ChangeBoardSpaceType(ssname, 0);
-
+	
+	BoardOutline^ triggered = FindBoardSpaceType(ssname);
+	if (triggered->getSelectedType() == 2)
+	{
+		triggered->setSelectedType(0);
+	}
 }
 
 
@@ -369,6 +380,12 @@ void Chess::Game::BoardSpace_PointerReleased(Platform::Object^ sender, Windows::
 	std::wstring_convert<convert_type, wchar_t> converter; //conversion of std::wstring to std::string
 	std::string ssname = converter.to_bytes(sname); //convert to std::string
 
+	BoardOutline^ triggered = FindBoardSpaceType(ssname);
+	if (triggered->getSelectedType() == 1)
+	{
+		triggered->setSelectedType(2);
+	} else {
+		triggered->setSelectedType(1);
 
-	ChangeBoardSpaceType(ssname, 1);
+	}
 }

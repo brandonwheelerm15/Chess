@@ -6,10 +6,13 @@
 #include "Code\Objects\BoardOutline.xaml.h"
 #include "Code\Objects\BoardSpace.xaml.h"
 
-#include <vector>
+#include <collection.h>
 
 using namespace Chess::GameSpace;
-using namespace std;
+
+
+using namespace Platform::Collections;
+
 
 class Chess::GameSpace::Board
 {
@@ -31,39 +34,55 @@ public:
 		BoardSelected BoardSelected;
 	};
 
-	vector< vector < Piece > > getGameBoard();
-	void setGameBoard(vector< vector < Piece > >);
+	void InitBoard();
 
-	Piece getGameBoardPosition();
-	void setGameBoardPosition(Piece::Loc);
+	void ResetBoard();
 
 
-	vector< vector < BoardState > > getSelectedStateGameBoard();
-	void setSelectedStateGameBoard(vector< vector < BoardState > >);
+	BoardSpace^ getSelectedBoardSpace();
+	void setSelectedBoardSpace(BoardSpace^);
 
-	BoardState getSelectedStateGameBoardPosition();
-	void setSelectedStateGameBoardPosition(BoardState);
-
-
-	vector< vector < BoardSpace > > getGameElementSpace();
-	void setGameElementSpace(vector< vector < BoardSpace > >);
-
-	BoardSpace getGameElementSpacePosition();
-	void setGameElementSpacePosition(BoardSpace);
+	BoardOutline^ getSelectedBoardOutline();
+	void setSelectedBoardOutline(BoardOutline^);
 
 
-	vector< vector < BoardOutline > > getGameElementOutline();
-	void setGameElementOutline(vector< vector < BoardOutline > >);
+	Vector<BoardSpace^>^ getGameElement_Space(int x);
+	void setGameElement_Space(Vector<BoardSpace^>^ a, int x);
 
-	BoardOutline getGameElementOutlinePosition();
-	void setGameElementOutlinePosition(BoardOutline);
+	Vector<BoardOutline^>^ getGameElement_Outline(int x);
+	void setGameElement_Outline(Vector<BoardOutline^>^ a, int x);
+
+
+	BoardSpace^ getGameElement_SpaceSpecific(int x, int xsp);
+	void setGameElement_SpaceSpecific(BoardSpace^ a, int x, int xsp);
+
+	BoardOutline^ getGameElement_OutlineSpecific(int x, int xsp);
+	void setGameElement_OutlineSpecific(BoardOutline^ a, int x, int xsp);
+
 
 private:
-	vector< vector < Piece > > GameBoard;
-	vector< vector < BoardState > > SelectedStateGameBoard;
 
-	vector< vector < BoardSpace > > GameElement_Space;
-	vector< vector < BoardOutline > > GameElement_Outline;
+	BoardSpace^ SelectedBoardSpace;
+	BoardOutline^ SelectedBoardOutline;
+
+
+	Vector<BoardSpace^>^ GameElement_Space1 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space2 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space3 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space4 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space5 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space6 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space7 = ref new Vector<BoardSpace^>();
+	Vector<BoardSpace^>^ GameElement_Space8 = ref new Vector<BoardSpace^>();
+
+	Vector<BoardOutline^>^ GameElement_Outline1 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline2 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline3 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline4 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline5 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline6 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline7 = ref new Vector<BoardOutline^>();
+	Vector<BoardOutline^>^ GameElement_Outline8 = ref new Vector<BoardOutline^>();
 
 };
 

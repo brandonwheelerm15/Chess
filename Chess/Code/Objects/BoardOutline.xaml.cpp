@@ -26,7 +26,7 @@ BoardOutline::BoardOutline()
 	InitializeComponent();
 }
 
-void BoardOutline::ChangeType(int x)
+void BoardOutline::setSelectedType(int x)
 {
 	if (x == 1)
 	{
@@ -78,4 +78,9 @@ void BoardOutline::ChangeType(int x)
 		this->SelectedPossibleHover->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 
 	}
+}
+
+int BoardOutline::getSelectedType()
+{
+	return this->SelectedType;
 }
