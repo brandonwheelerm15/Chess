@@ -450,3 +450,20 @@ Vector<Chess::BoardOutline^>^ Chess::GameSpace::Board::getGameElement_Outline(in
 void Chess::GameSpace::Board::setGameElement_Outline(Vector<Chess::BoardOutline^>^ a, int x)
 {
 }
+
+Chess::BoardSpace^ Chess::GameSpace::Board::getSelectedBoardSpace()
+{
+	return SelectedBoardSpace;
+}
+void Chess::GameSpace::Board::setSelectedBoardSpace(BoardSpace^ x)
+{
+	SelectedBoardSpace = x;
+}
+Chess::BoardOutline^ Chess::GameSpace::Board::getSelectedBoardOutline()
+{
+	return SelectedBoardOutline;
+}
+void Chess::GameSpace::Board::setSelectedBoardOutline(BoardOutline^ x)
+{
+	SelectedBoardOutline = x;
+}

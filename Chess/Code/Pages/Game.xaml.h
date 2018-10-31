@@ -19,8 +19,11 @@ namespace Chess
 	{
 	public:
 		Game();
+	internal:
+		Board CurrentBoard = Board();
 
 	private:
+
 		BoardOutline^ FindBoardSpaceType(std::string ssname);
 		void BoardSpace_PointerEntered(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e);
 		void BoardSpace_PointerExited(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e);

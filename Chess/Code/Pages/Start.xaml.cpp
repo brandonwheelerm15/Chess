@@ -1,6 +1,7 @@
 ﻿#include "Code\Headers\main.h"
 #include "Start.xaml.h"
 #include "Game.xaml.h"
+#include "Message.xaml.h"
 
 #include "Code\Headers\Piece.h"
 

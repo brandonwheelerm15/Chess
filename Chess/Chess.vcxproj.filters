@@ -30,15 +30,6 @@
     <ClCompile Include="Code\Classes\PieceRook.cpp" />
     <ClCompile Include="Code\AI\BridgeAI.cpp" />
     <ClCompile Include="Code\Namespace\Namespace.h" />
-    <ClCompile Include="Code\Objects\BoardOutline.xaml.cpp" />
-    <ClCompile Include="Code\Objects\BoardSpace.xaml.cpp" />
-    <ClCompile Include="Code\Objects\Piece.xaml.cpp" />
-    <ClCompile Include="Code\Objects\PieceBishop.xaml.cpp" />
-    <ClCompile Include="Code\Objects\PieceKing.xaml.cpp" />
-    <ClCompile Include="Code\Objects\PieceKnight.xaml.cpp" />
-    <ClCompile Include="Code\Objects\PiecePawn.xaml.cpp" />
-    <ClCompile Include="Code\Objects\PieceQueen.xaml.cpp" />
-    <ClCompile Include="Code\Objects\PieceRook.xaml.cpp" />
     <ClCompile Include="Code\Pages\Message.xaml.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -61,15 +52,6 @@
     <ClInclude Include="Code\Headers\PieceRook.h" />
     <ClInclude Include="Code\Headers\Timer.h" />
     <ClInclude Include="Code\AI\BridgeAI.h" />
-    <ClInclude Include="Code\Objects\BoardOutline.xaml.h" />
-    <ClInclude Include="Code\Objects\BoardSpace.xaml.h" />
-    <ClInclude Include="Code\Objects\Piece.xaml.h" />
-    <ClInclude Include="Code\Objects\PieceBishop.xaml.h" />
-    <ClInclude Include="Code\Objects\PieceKing.xaml.h" />
-    <ClInclude Include="Code\Objects\PieceKnight.xaml.h" />
-    <ClInclude Include="Code\Objects\PiecePawn.xaml.h" />
-    <ClInclude Include="Code\Objects\PieceQueen.xaml.h" />
-    <ClInclude Include="Code\Objects\PieceRook.xaml.h" />
     <ClInclude Include="Code\Pages\Message.xaml.h" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +103,42 @@
     <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Selected_PossibleHover.PNG">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_Black_Bishop.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_Black_King.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_Black_Knight.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_Black_Pawn.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_Black_Queen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_Black_Rook.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_White_Bishop.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_White_King.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_White_Knight.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_White_Pawn.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_White_Queen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Assets\Piece_White_Rook.png">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
@@ -128,16 +146,16 @@
   <ItemGroup>
     <Page Include="Code\Pages\Game.xaml" />
     <Page Include="Code\Pages\Start.xaml" />
-    <Page Include="Code\Objects\BoardOutline.xaml" />
-    <Page Include="Code\Objects\BoardSpace.xaml" />
-    <Page Include="Code\Objects\Piece.xaml" />
-    <Page Include="Code\Objects\PieceBishop.xaml" />
-    <Page Include="Code\Objects\PieceKing.xaml" />
-    <Page Include="Code\Objects\PieceKnight.xaml" />
-    <Page Include="Code\Objects\PiecePawn.xaml" />
-    <Page Include="Code\Objects\PieceQueen.xaml" />
-    <Page Include="Code\Objects\PieceRook.xaml" />
     <Page Include="Code\Pages\Message.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardOutline.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardSpace.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\Piece.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceBishop.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceKing.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceKnight.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PiecePawn.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceQueen.xaml" />
+    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceRook.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\logo.xcf" />

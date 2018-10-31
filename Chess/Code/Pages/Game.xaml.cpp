@@ -8,6 +8,7 @@
 #include "Code\Objects\BoardOutline.xaml.h"
 #include "Code\Objects\BoardSpace.xaml.h"
 #include "Code\Headers\Board.h"
+#include "Code\Objects\PiecePawn.xaml.h"
 
 #include <locale>
 #include <codecvt>
@@ -30,11 +31,11 @@ using namespace Platform::Collections;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
+
 Game::Game()
 {
 	InitializeComponent();
 
-	Board CurrentBoard;
 
 	CurrentBoard.InitBoard();
 
@@ -187,6 +188,8 @@ Game::Game()
 
 
 	CurrentBoard.ResetBoard();
+
+	BoardPiece88_PawnBlack->setColor(1);
 }
 
 BoardOutline^ Chess::Game::FindBoardSpaceType(std::string ssname)
@@ -360,7 +363,7 @@ void Chess::Game::BoardSpace_PointerExited(Platform::Object^ sender, Windows::UI
 	std::wstring_convert<convert_type, wchar_t> converter; //conversion of std::wstring to std::string
 	std::string ssname = converter.to_bytes(sname); //convert to std::string
 
-	
+
 	BoardOutline^ triggered = FindBoardSpaceType(ssname);
 	if (triggered->getSelectedType() == 2)
 	{
@@ -384,8 +387,12 @@ void Chess::Game::BoardSpace_PointerReleased(Platform::Object^ sender, Windows::
 	if (triggered->getSelectedType() == 1)
 	{
 		triggered->setSelectedType(2);
-	} else {
+	}
+	else {
 		triggered->setSelectedType(1);
-
+		if (CurrentBoard.getSelectedBoardOutline() != nullptr) {
+			CurrentBoard.getSelectedBoardOutline()->setSelectedType(0);
+		}
+		CurrentBoard.setSelectedBoardOutline(triggered);
 	}
 }

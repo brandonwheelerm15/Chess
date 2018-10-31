@@ -142,6 +142,7 @@ extern "C" __declspec(dllimport) int __stdcall IsDebuggerPresent();
 #include "Code\Objects\BoardOutline.xaml.h"
 #include "Code\Objects\BoardOutline.xaml.h"
 #include "Code\Objects\BoardOutline.xaml.h"
+#include "Code\Objects\PiecePawn.xaml.h"
 
 void ::Chess::Game::InitializeComponent()
 {
@@ -1568,6 +1569,17 @@ void ::Chess::Game::Connect(int __connectionId, ::Platform::Object^ __target)
             (safe_cast<::Chess::BoardOutline^>(this->BoardOutline88))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
             (safe_cast<::Chess::BoardOutline^>(this->BoardOutline88))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
+        }
+        break;
+    case 131:
+        {
+            this->BoardPiece88_PawnBlack = safe_cast<::Chess::PiecePawn^>(__target);
+            (safe_cast<::Chess::PiecePawn^>(this->BoardPiece88_PawnBlack))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerEntered);
+            (safe_cast<::Chess::PiecePawn^>(this->BoardPiece88_PawnBlack))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerExited);
+            (safe_cast<::Chess::PiecePawn^>(this->BoardPiece88_PawnBlack))->PointerReleased += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Chess::Game::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&Game::BoardSpace_PointerReleased);
         }
         break;

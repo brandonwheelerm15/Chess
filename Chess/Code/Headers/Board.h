@@ -17,7 +17,6 @@ using namespace Platform::Collections;
 class Chess::GameSpace::Board
 {
 public:
-
 	enum State {};
 
 	enum BoardColor {Black, White};
@@ -40,10 +39,10 @@ public:
 
 
 	BoardSpace^ getSelectedBoardSpace();
-	void setSelectedBoardSpace(BoardSpace^);
+	void setSelectedBoardSpace(BoardSpace^ x);
 
 	BoardOutline^ getSelectedBoardOutline();
-	void setSelectedBoardOutline(BoardOutline^);
+	void setSelectedBoardOutline(BoardOutline^ x);
 
 
 	Vector<BoardSpace^>^ getGameElement_Space(int x);
@@ -87,7 +86,7 @@ private:
 	Vector<BoardOutline^>^ GameElement_Outline8 = ref new Vector<BoardOutline^>();
 
 	std::vector< Vector<BoardOutline^>^ > GameElement_OutlineAll;
-
+	
 };
 
 #endif

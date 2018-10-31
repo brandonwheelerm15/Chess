@@ -19,6 +19,7 @@ namespace Windows {
 namespace Chess {
     ref class BoardSpace;
     ref class BoardOutline;
+    ref class PiecePawn;
 }
 
 namespace Chess
@@ -170,6 +171,7 @@ namespace Chess
         private: ::Chess::BoardOutline^ BoardOutline86;
         private: ::Chess::BoardOutline^ BoardOutline87;
         private: ::Chess::BoardOutline^ BoardOutline88;
+        private: ::Chess::PiecePawn^ BoardPiece88_PawnBlack;
     };
 }
 

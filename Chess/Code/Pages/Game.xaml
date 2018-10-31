@@ -181,5 +181,7 @@
         <local:BoardOutline x:Name="BoardOutline87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
         <local:BoardOutline x:Name="BoardOutline88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
+        <local:PiecePawn x:Name="BoardPiece88_PawnBlack" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
+
     </Grid>
 </Page>

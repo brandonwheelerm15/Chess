@@ -181,6 +181,8 @@
         <local:BoardOutline x:ConnectionId='129' x:Name="BoardOutline87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
         <local:BoardOutline x:ConnectionId='130' x:Name="BoardOutline88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
 
+        <local:PiecePawn x:ConnectionId='131' x:Name="BoardPiece88_PawnBlack" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+
     </Grid>
 </Page>
 

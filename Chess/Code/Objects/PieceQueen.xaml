@@ -6,10 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="300"
-    d:DesignWidth="400">
+    d:DesignHeight="132"
+    d:DesignWidth="132">
 
     <Grid>
+        <Image x:Name="Black" VerticalAlignment="Stretch" Stretch="Fill" Source="/Assets/Piece_Black_Queen.png" Visibility="Collapsed"/>
+        <Image x:Name="White" VerticalAlignment="Stretch" Stretch="Fill" Source="/Assets/Piece_White_Queen.png" Visibility="Collapsed"/>
 
     </Grid>
 </UserControl>

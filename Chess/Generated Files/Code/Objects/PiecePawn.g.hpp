@@ -28,8 +28,19 @@ void ::Chess::PiecePawn::InitializeComponent()
 
 void ::Chess::PiecePawn::Connect(int __connectionId, ::Platform::Object^ __target)
 {
-    __connectionId;         // unreferenced 
-    __target;               // unreferenced
+    switch (__connectionId)
+    {
+    case 2:
+        {
+            this->Black = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
+        }
+        break;
+    case 3:
+        {
+            this->White = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
+        }
+        break;
+    }
     _contentLoaded = true;
 }
 
