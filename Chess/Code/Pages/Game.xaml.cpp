@@ -346,8 +346,14 @@ void Chess::Game::BoardSpace_PointerEntered(Platform::Object^ sender, Windows::U
 
 
 	BoardOutline^ triggered = FindBoardSpaceType(ssname);
-	if (triggered->getSelectedType() != 1) {
-		triggered->setSelectedType(2);
+	if (triggered->getSelectedType() != 1 && triggered->getSelectedType() != 4) {
+		if (triggered->getSelectedType() == 3)
+		{
+			triggered->setSelectedType(5);
+		} else
+		{
+			triggered->setSelectedType(2);
+		}
 	}
 }
 
@@ -368,6 +374,8 @@ void Chess::Game::BoardSpace_PointerExited(Platform::Object^ sender, Windows::UI
 	if (triggered->getSelectedType() == 2)
 	{
 		triggered->setSelectedType(0);
+	} else if (triggered->getSelectedType() == 5) {
+		triggered->setSelectedType(3);
 	}
 }
 
@@ -387,12 +395,26 @@ void Chess::Game::BoardSpace_PointerReleased(Platform::Object^ sender, Windows::
 	if (triggered->getSelectedType() == 1)
 	{
 		triggered->setSelectedType(2);
+		CurrentBoard.FindSelectedPossible(false);
+		CurrentBoard.setSelectedBoardOutline(nullptr);
+	} else if (triggered->getSelectedType() == 4) {
+		triggered->setSelectedType(5);
 	}
 	else {
-		triggered->setSelectedType(1);
-		if (CurrentBoard.getSelectedBoardOutline() != nullptr) {
-			CurrentBoard.getSelectedBoardOutline()->setSelectedType(0);
+		if (triggered->getSelectedType() == 2)
+		{
+			triggered->setSelectedType(1);
+			if (CurrentBoard.getSelectedBoardOutline() != nullptr) {
+				CurrentBoard.getSelectedBoardOutline()->setSelectedType(0);
+				CurrentBoard.FindSelectedPossible(false);
+			}
+			CurrentBoard.setSelectedBoardOutline(triggered);
+			CurrentBoard.FindSelectedPossible(true);
+		} else if (triggered->getSelectedType() == 5)
+		{
+			triggered->setSelectedType(4);
+			CurrentBoard.setSelectedPossibleBoardOutline(triggered);
 		}
-		CurrentBoard.setSelectedBoardOutline(triggered);
+
 	}
 }

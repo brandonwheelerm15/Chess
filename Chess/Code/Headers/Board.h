@@ -37,12 +37,20 @@ public:
 
 	void ResetBoard();
 
+	void FindSelectedPossible(bool toshow);
+
 
 	BoardSpace^ getSelectedBoardSpace();
 	void setSelectedBoardSpace(BoardSpace^ x);
 
 	BoardOutline^ getSelectedBoardOutline();
 	void setSelectedBoardOutline(BoardOutline^ x);
+
+	BoardSpace^ getSelectedPossibleBoardSpace();
+	void setSelectedPossibleBoardSpace(BoardSpace^ x);
+
+	BoardOutline^ getSelectedPossibleBoardOutline();
+	void setSelectedPossibleBoardOutline(BoardOutline^ x);
 
 
 	Vector<BoardSpace^>^ getGameElement_Space(int x);
@@ -64,6 +72,8 @@ private:
 	BoardSpace^ SelectedBoardSpace;
 	BoardOutline^ SelectedBoardOutline;
 
+	BoardSpace^ SelectedPossibleBoardSpace;
+	BoardOutline^ SelectedPossibleBoardOutline;
 
 	Vector<BoardSpace^>^ GameElement_Space1 = ref new Vector<BoardSpace^>();
 	Vector<BoardSpace^>^ GameElement_Space2 = ref new Vector<BoardSpace^>();

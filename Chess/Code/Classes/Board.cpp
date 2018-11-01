@@ -4,6 +4,7 @@
 #include "Code\Objects\BoardSpace.xaml.h"
 
 #include <collection.h>
+#include <algorithm>
 
 using namespace Chess::GameSpace;
 using namespace Platform::Collections;
@@ -155,6 +156,27 @@ void Chess::GameSpace::Board::InitBoard()
 	this->GameElement_Outline8->Append(ref new Chess::BoardOutline);
 	this->GameElement_Outline8->Append(ref new Chess::BoardOutline);
 	this->GameElement_Outline8->Append(ref new Chess::BoardOutline);
+
+	this->GameElement_SpaceAll.push_back(GameElement_Space1);
+	this->GameElement_SpaceAll.push_back(GameElement_Space2);
+	this->GameElement_SpaceAll.push_back(GameElement_Space3);
+	this->GameElement_SpaceAll.push_back(GameElement_Space4);
+	this->GameElement_SpaceAll.push_back(GameElement_Space5);
+	this->GameElement_SpaceAll.push_back(GameElement_Space6);
+	this->GameElement_SpaceAll.push_back(GameElement_Space7);
+	this->GameElement_SpaceAll.push_back(GameElement_Space8);
+
+	this->GameElement_OutlineAll.push_back(GameElement_Outline1);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline2);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline3);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline4);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline5);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline6);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline7);
+	this->GameElement_OutlineAll.push_back(GameElement_Outline8);
+
+
+
 }
 
 void Chess::GameSpace::Board::ResetBoard()
@@ -309,126 +331,23 @@ void Chess::GameSpace::Board::ResetBoard()
 
 Chess::BoardSpace^ Chess::GameSpace::Board::getGameElement_SpaceSpecific(int x, int xsp)
 {
-	switch(x)
-	{
-	case 1: 
-		return GameElement_Space1->GetAt(xsp - 1);
-		break;
-	case 2:
-		return GameElement_Space2->GetAt(xsp - 1);
-		break;
-	case 3:
-		return GameElement_Space3->GetAt(xsp - 1);
-		break;
-	case 4:
-		return GameElement_Space4->GetAt(xsp - 1);
-		break;
-	case 5:
-		return GameElement_Space5->GetAt(xsp - 1);
-		break;
-	case 6:
-		return GameElement_Space6->GetAt(xsp - 1);
-		break;
-	case 7:
-		return GameElement_Space7->GetAt(xsp - 1);
-		break;
-	case 8:
-		return GameElement_Space8->GetAt(xsp - 1);
-		break;
-	}
+	
+	return ((GameElement_SpaceAll[x - 1])->GetAt(xsp - 1));
 }
 
 void Chess::GameSpace::Board::setGameElement_SpaceSpecific(Chess::BoardSpace^ a, int x, int xsp)
 {
-	switch (x)
-	{
-	case 1:
-		GameElement_Space1->SetAt(xsp - 1, a);
-		break;
-	case 2:
-		GameElement_Space2->SetAt(xsp - 1, a);
-		break;
-	case 3:
-		GameElement_Space3->SetAt(xsp - 1, a);
-		break;
-	case 4:
-		GameElement_Space4->SetAt(xsp - 1, a);
-		break;
-	case 5:
-		GameElement_Space5->SetAt(xsp - 1, a);
-		break;
-	case 6:
-		GameElement_Space6->SetAt(xsp - 1, a);
-		break;
-	case 7:
-		GameElement_Space7->SetAt(xsp - 1, a);
-		break;
-	case 8:
-		GameElement_Space8->SetAt(xsp - 1, a);
-		break;
-	}
+	((GameElement_SpaceAll[x - 1])->SetAt(xsp - 1, a));
 }
 
 Chess::BoardOutline^ Chess::GameSpace::Board::getGameElement_OutlineSpecific(int x, int xsp)
 {
-	switch (x)
-	{
-	case 1:
-		return GameElement_Outline1->GetAt(xsp - 1);
-		break;
-	case 2:
-		return GameElement_Outline2->GetAt(xsp - 1);
-		break;
-	case 3:
-		return GameElement_Outline3->GetAt(xsp - 1);
-		break;
-	case 4:
-		return GameElement_Outline4->GetAt(xsp - 1);
-		break;
-	case 5:
-		return GameElement_Outline5->GetAt(xsp - 1);
-		break;
-	case 6:
-		return GameElement_Outline6->GetAt(xsp - 1);
-		break;
-	case 7:
-		return GameElement_Outline7->GetAt(xsp - 1);
-		break;
-	case 8:
-		return GameElement_Outline8->GetAt(xsp - 1);
-		break;
-	}
+	return ((GameElement_OutlineAll[x - 1])->GetAt(xsp - 1));
 }
 
 void Chess::GameSpace::Board::setGameElement_OutlineSpecific(Chess::BoardOutline^ a, int x, int xsp)
 {
-	switch (x)
-	{
-	case 1:
-		GameElement_Outline1->SetAt(xsp - 1, a);
-		break;
-	case 2:
-		GameElement_Outline2->SetAt(xsp - 1, a);
-		break;
-	case 3:
-		GameElement_Outline3->SetAt(xsp - 1, a);
-		break;
-	case 4:
-		GameElement_Outline4->SetAt(xsp - 1, a);
-		break;
-	case 5:
-		GameElement_Outline5->SetAt(xsp - 1, a);
-		break;
-	case 6:
-		GameElement_Outline6->SetAt(xsp - 1, a);
-		break;
-	case 7:
-		GameElement_Outline7->SetAt(xsp - 1, a);
-		break;
-	case 8:
-		GameElement_Outline8->SetAt(xsp - 1, a);
-		break;
-	}
+	((GameElement_OutlineAll[x - 1])->SetAt(xsp - 1, a));
 }
 
 
@@ -466,4 +385,56 @@ Chess::BoardOutline^ Chess::GameSpace::Board::getSelectedBoardOutline()
 void Chess::GameSpace::Board::setSelectedBoardOutline(BoardOutline^ x)
 {
 	SelectedBoardOutline = x;
+}
+
+Chess::BoardSpace^ Chess::GameSpace::Board::getSelectedPossibleBoardSpace()
+{
+	return SelectedPossibleBoardSpace;
+}
+void Chess::GameSpace::Board::setSelectedPossibleBoardSpace(BoardSpace^ x)
+{
+	SelectedPossibleBoardSpace = x;
+}
+Chess::BoardOutline^ Chess::GameSpace::Board::getSelectedPossibleBoardOutline()
+{
+	return SelectedPossibleBoardOutline;
+}
+void Chess::GameSpace::Board::setSelectedPossibleBoardOutline(BoardOutline^ x)
+{
+	SelectedPossibleBoardOutline = x;
+}
+
+using namespace Windows::UI::Popups;
+using namespace Windows::UI::Xaml;
+using namespace Windows::UI::Xaml::Controls;
+using namespace Windows::UI::Xaml::Navigation;
+
+void Chess::GameSpace::Board::FindSelectedPossible(bool toshow)
+{
+	int firstbound=1, secondbound=1;
+
+
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j < 8; j++) {
+			if ((GameElement_OutlineAll[i])->GetAt(j) == SelectedBoardOutline)
+			{
+				firstbound = i;
+				secondbound = j;
+			}
+		}
+	}
+	if (toshow)
+	{
+		(GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound - 1)->setSelectedType(3);
+		(GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound + 1)->setSelectedType(3);
+		(GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound - 2)->setSelectedType(3);
+		(GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound + 2)->setSelectedType(3);
+	}
+	else
+	{
+		(GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound - 1)->setSelectedType(0);
+		(GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound + 1)->setSelectedType(0);
+		(GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound - 2)->setSelectedType(0);
+		(GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound + 2)->setSelectedType(0);
+	}
 }
