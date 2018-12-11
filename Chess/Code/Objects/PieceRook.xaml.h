@@ -13,6 +13,14 @@ namespace Chess
 	public ref class PieceRook sealed
 	{
 	public:
+		//0 nothing, 1 black, 2 white
 		PieceRook();
+		PieceRook(int Color);
+
+		void setColor(int x);
+		int getColor();
+	private:
+		int Color;
+
 	};
 }

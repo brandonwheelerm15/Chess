@@ -25,3 +25,43 @@ PieceKnight::PieceKnight()
 {
 	InitializeComponent();
 }
+PieceKnight::PieceKnight(int Color)
+{
+	this->Color = Color;
+	switch (Color)
+	{
+	case 0:
+		this->Black->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		this->White->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		break;
+	case 1:
+		this->Black->Visibility = Windows::UI::Xaml::Visibility::Visible;
+		this->White->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		break;
+	case 2:
+		this->Black->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		this->White->Visibility = Windows::UI::Xaml::Visibility::Visible;
+		break;
+	}
+}
+void PieceKnight::setColor(int x)
+{
+	this->Color = x;
+
+	if (x == 0) {
+		this->Black->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		this->White->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+	}
+	else if (x == 1) {
+		this->Black->Visibility = Windows::UI::Xaml::Visibility::Visible;
+		this->White->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+	}
+	else if (x == 2) {
+		this->Black->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		this->White->Visibility = Windows::UI::Xaml::Visibility::Visible;
+	}
+}
+int PieceKnight::getColor()
+{
+	return Color;
+}

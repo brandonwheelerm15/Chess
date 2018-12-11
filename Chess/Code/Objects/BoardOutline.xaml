@@ -10,6 +10,8 @@
     d:DesignWidth="400">
 
     <Grid>
+
+        <Rectangle VerticalAlignment="Stretch" Fill="Black" Opacity="0.1"/>
         <Image x:Name="SelectedClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_Click.png" Visibility="Collapsed" Stretch="Fill"/>
         <Image x:Name="SelectedHover" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_Hover.png" Visibility="Collapsed" Stretch="Fill"/>
         <Image x:Name="SelectedPossible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/Selected_Possible.png" Visibility="Collapsed" Stretch="Fill"/>

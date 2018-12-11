@@ -13,6 +13,14 @@ namespace Chess
 	public ref class PieceKnight sealed
 	{
 	public:
+		//0 nothing, 1 black, 2 white
 		PieceKnight();
+		PieceKnight(int Color);
+
+		void setColor(int x);
+		int getColor();
+	private:
+		int Color;
+
 	};
 }

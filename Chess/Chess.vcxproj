@@ -145,9 +145,6 @@
     <ClInclude Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardSpace.xaml.h">
       <DependentUpon>..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardSpace.xaml</DependentUpon>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\Piece.xaml.h">
-      <DependentUpon>..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\Piece.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceBishop.xaml.h">
       <DependentUpon>..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceBishop.xaml</DependentUpon>
     </ClInclude>
@@ -201,7 +198,6 @@
     </ApplicationDefinition>
     <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardOutline.xaml" />
     <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardSpace.xaml" />
-    <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\Piece.xaml" />
     <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceBishop.xaml" />
     <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceKing.xaml" />
     <Page Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceKnight.xaml" />
@@ -257,9 +253,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardSpace.xaml.cpp">
       <DependentUpon>..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\BoardSpace.xaml</DependentUpon>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\Piece.xaml.cpp">
-      <DependentUpon>..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\Piece.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceBishop.xaml.cpp">
       <DependentUpon>..\..\..\..\..\..\..\CLASS%3b C++ Programming\Projects\Chess\NEW\Chess\Chess\Chess\Code\Objects\PieceBishop.xaml</DependentUpon>

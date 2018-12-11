@@ -11,7 +11,6 @@
 
 #include "Code\Objects\BoardOutline.xaml.h"
 #include "Code\Objects\BoardSpace.xaml.h"
-#include "Code\Objects\Piece.xaml.h"
 #include "Code\Objects\PieceBishop.xaml.h"
 #include "Code\Objects\PieceKing.xaml.h"
 #include "Code\Objects\PieceKnight.xaml.h"
@@ -25,7 +24,6 @@
 #include "XamlBindingInfo.g.hpp"
 #include "Code\Objects\BoardOutline.g.hpp"
 #include "Code\Objects\BoardSpace.g.hpp"
-#include "Code\Objects\Piece.g.hpp"
 #include "Code\Objects\PieceBishop.g.hpp"
 #include "Code\Objects\PieceKing.g.hpp"
 #include "Code\Objects\PieceKnight.g.hpp"
@@ -92,94 +90,88 @@ const TypeInfo TypeInfos[] =
     //   0
     L"Chess.Game", L"",
     &ActivateType<::Chess::Game>, nullptr, nullptr, nullptr,
-    12, // Windows.UI.Xaml.Controls.Page
+    11, // Windows.UI.Xaml.Controls.Page
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   1
-    L"Chess.Piece", L"",
-    &ActivateType<::Chess::Piece>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.Start", L"",
+    &ActivateType<::Chess::Start>, nullptr, nullptr, nullptr,
+    11, // Windows.UI.Xaml.Controls.Page
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   2
-    L"Chess.Start", L"",
-    &ActivateType<::Chess::Start>, nullptr, nullptr, nullptr,
-    12, // Windows.UI.Xaml.Controls.Page
+    L"Chess.Message", L"",
+    &ActivateType<::Chess::Message>, nullptr, nullptr, nullptr,
+    13, // Windows.UI.Xaml.Controls.ContentDialog
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   3
-    L"Chess.Message", L"",
-    &ActivateType<::Chess::Message>, nullptr, nullptr, nullptr,
-    14, // Windows.UI.Xaml.Controls.ContentDialog
+    L"Chess.PieceKing", L"",
+    &ActivateType<::Chess::PieceKing>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   4
-    L"Chess.PieceKing", L"",
-    &ActivateType<::Chess::PieceKing>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.PiecePawn", L"",
+    &ActivateType<::Chess::PiecePawn>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   5
-    L"Chess.PiecePawn", L"",
-    &ActivateType<::Chess::PiecePawn>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.PieceRook", L"",
+    &ActivateType<::Chess::PieceRook>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   6
-    L"Chess.PieceRook", L"",
-    &ActivateType<::Chess::PieceRook>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.BoardSpace", L"",
+    &ActivateType<::Chess::BoardSpace>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   7
-    L"Chess.BoardSpace", L"",
-    &ActivateType<::Chess::BoardSpace>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.PieceQueen", L"",
+    &ActivateType<::Chess::PieceQueen>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   8
-    L"Chess.PieceQueen", L"",
-    &ActivateType<::Chess::PieceQueen>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.PieceBishop", L"",
+    &ActivateType<::Chess::PieceBishop>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //   9
-    L"Chess.PieceBishop", L"",
-    &ActivateType<::Chess::PieceBishop>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.PieceKnight", L"",
+    &ActivateType<::Chess::PieceKnight>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //  10
-    L"Chess.PieceKnight", L"",
-    &ActivateType<::Chess::PieceKnight>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
+    L"Chess.BoardOutline", L"",
+    &ActivateType<::Chess::BoardOutline>, nullptr, nullptr, nullptr,
+    12, // Windows.UI.Xaml.Controls.UserControl
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
     //  11
-    L"Chess.BoardOutline", L"",
-    &ActivateType<::Chess::BoardOutline>, nullptr, nullptr, nullptr,
-    13, // Windows.UI.Xaml.Controls.UserControl
-    0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
-    TypeInfo_Flags_IsLocalType | TypeInfo_Flags_None,
-    //  12
     L"Windows.UI.Xaml.Controls.Page", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     TypeInfo_Flags_IsSystemType | TypeInfo_Flags_None,
-    //  13
+    //  12
     L"Windows.UI.Xaml.Controls.UserControl", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     TypeInfo_Flags_IsSystemType | TypeInfo_Flags_None,
-    //  14
+    //  13
     L"Windows.UI.Xaml.Controls.ContentDialog", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
     0, 0, -1, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     TypeInfo_Flags_IsSystemType | TypeInfo_Flags_None,
-    //  15
+    //  14
     L"Windows.UI.Xaml.Controls.ContentControl", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
@@ -206,35 +198,35 @@ const UINT TypeInfoLookup[] = {
       0,   //   9
       0,   //  10
       1,   //  11
-      3,   //  12
-      3,   //  13
-      4,   //  14
-      4,   //  15
-      7,   //  16
-      9,   //  17
-     11,   //  18
-     12,   //  19
-     12,   //  20
-     12,   //  21
-     12,   //  22
-     12,   //  23
-     12,   //  24
-     12,   //  25
-     12,   //  26
-     12,   //  27
-     12,   //  28
-     12,   //  29
-     13,   //  30
-     13,   //  31
-     13,   //  32
-     13,   //  33
-     13,   //  34
-     13,   //  35
-     13,   //  36
-     14,   //  37
-     14,   //  38
-     15,   //  39
-     16,   //  40
+      2,   //  12
+      2,   //  13
+      3,   //  14
+      3,   //  15
+      6,   //  16
+      8,   //  17
+     10,   //  18
+     11,   //  19
+     11,   //  20
+     11,   //  21
+     11,   //  22
+     11,   //  23
+     11,   //  24
+     11,   //  25
+     11,   //  26
+     11,   //  27
+     11,   //  28
+     11,   //  29
+     12,   //  30
+     12,   //  31
+     12,   //  32
+     12,   //  33
+     12,   //  34
+     12,   //  35
+     12,   //  36
+     13,   //  37
+     13,   //  38
+     14,   //  39
+     15,   //  40
 };
 
 const TypeInfo* GetTypeInfo(::Platform::String^ typeName)

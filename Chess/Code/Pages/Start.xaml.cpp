@@ -31,8 +31,6 @@ Start::Start()
 {
 	InitializeComponent();
 
-	PieceKnight mypiece;
-	mypiece.MovePiece(new Piece::Loc('X', 'X'));
 
 	//MessageDialog^ msg = ref new MessageDialog("Start");
 	//msg->ShowAsync();

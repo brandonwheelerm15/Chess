@@ -350,8 +350,6 @@ void Chess::GameSpace::Board::setGameElement_OutlineSpecific(Chess::BoardOutline
 	((GameElement_OutlineAll[x - 1])->SetAt(xsp - 1, a));
 }
 
-
-
 Vector<Chess::BoardSpace^>^ Chess::GameSpace::Board::getGameElement_Space(int x)
 {
 	return nullptr;
@@ -386,6 +384,15 @@ void Chess::GameSpace::Board::setSelectedBoardOutline(BoardOutline^ x)
 {
 	SelectedBoardOutline = x;
 }
+Piece::PieceTypes Chess::GameSpace::Board::getSelectedBoardPiece()
+{
+	return SelectedBoardPiece;
+}
+void Chess::GameSpace::Board::setSelectedBoardPiece(Piece::PieceTypes x)
+{
+	SelectedBoardPiece = x;
+}
+
 
 Chess::BoardSpace^ Chess::GameSpace::Board::getSelectedPossibleBoardSpace()
 {
@@ -425,16 +432,72 @@ void Chess::GameSpace::Board::FindSelectedPossible(bool toshow)
 	}
 	if (toshow)
 	{
-		(GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound - 1)->setSelectedType(3);
-		(GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound + 1)->setSelectedType(3);
-		(GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound - 2)->setSelectedType(3);
-		(GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound + 2)->setSelectedType(3);
+
+
+
+		if ((firstbound - 1) >= 0 && (secondbound - 1) >= 0) (GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound - 1)->setSelectedType(3);
+		if ((firstbound + 1) < 8 && (secondbound + 1) < 8) (GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound + 1)->setSelectedType(3);
+		if ((firstbound - 2) >= 0 && (secondbound - 2) >= 0) (GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound - 2)->setSelectedType(3);
+		if ((firstbound + 2) < 8 && (secondbound + 2) < 8) (GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound + 2)->setSelectedType(3);
+		if ((firstbound - 3) >= 0 && (secondbound - 3) >= 0) (GameElement_OutlineAll[firstbound - 3])->GetAt(secondbound - 3)->setSelectedType(3);
+		if ((firstbound + 3) < 8 && (secondbound + 3) < 8) (GameElement_OutlineAll[firstbound + 3])->GetAt(secondbound + 3)->setSelectedType(3);
+		if ((firstbound - 4) >= 0 && (secondbound - 4) >= 0) (GameElement_OutlineAll[firstbound - 4])->GetAt(secondbound - 4)->setSelectedType(3);
+		if ((firstbound + 4) < 8 && (secondbound + 4) < 8) (GameElement_OutlineAll[firstbound + 4])->GetAt(secondbound + 4)->setSelectedType(3);
+		if ((firstbound - 5) >= 0 && (secondbound - 5) >= 0) (GameElement_OutlineAll[firstbound - 5])->GetAt(secondbound - 5)->setSelectedType(3);
+		if ((firstbound + 5) < 8 && (secondbound + 5) < 8) (GameElement_OutlineAll[firstbound + 5])->GetAt(secondbound + 5)->setSelectedType(3);
+		if ((firstbound - 6) >= 0 && (secondbound - 6) >= 0) (GameElement_OutlineAll[firstbound - 6])->GetAt(secondbound - 6)->setSelectedType(3);
+		if ((firstbound + 6) < 8 && (secondbound + 6) < 8) (GameElement_OutlineAll[firstbound + 6])->GetAt(secondbound + 6)->setSelectedType(3);
+		if ((firstbound - 7) >= 0 && (secondbound - 7) >= 0) (GameElement_OutlineAll[firstbound - 7])->GetAt(secondbound - 7)->setSelectedType(3);
+		if ((firstbound + 7) < 8 && (secondbound + 7) < 8) (GameElement_OutlineAll[firstbound + 7])->GetAt(secondbound + 7)->setSelectedType(3);
+
+		if ((firstbound - 1) >= 0 && (secondbound + 1) < 8) (GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound + 1)->setSelectedType(3);
+		if ((firstbound + 1) < 8 && (secondbound - 1) >= 0) (GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound - 1)->setSelectedType(3);
+		if ((firstbound - 2) >= 0 && (secondbound + 2) < 8) (GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound + 2)->setSelectedType(3);
+		if ((firstbound + 2) < 8 && (secondbound - 2) >= 0) (GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound - 2)->setSelectedType(3);
+		if ((firstbound - 3) >= 0 && (secondbound + 3) < 8) (GameElement_OutlineAll[firstbound - 3])->GetAt(secondbound + 3)->setSelectedType(3);
+		if ((firstbound + 3) < 8 && (secondbound - 3) >= 0) (GameElement_OutlineAll[firstbound + 3])->GetAt(secondbound - 3)->setSelectedType(3);
+		if ((firstbound - 4) >= 0 && (secondbound + 4) < 8) (GameElement_OutlineAll[firstbound - 4])->GetAt(secondbound + 4)->setSelectedType(3);
+		if ((firstbound + 4) < 8 && (secondbound - 4) >= 0) (GameElement_OutlineAll[firstbound + 4])->GetAt(secondbound - 4)->setSelectedType(3);
+		if ((firstbound - 5) >= 0 && (secondbound + 5) < 8) (GameElement_OutlineAll[firstbound - 5])->GetAt(secondbound + 5)->setSelectedType(3);
+		if ((firstbound + 5) < 8 && (secondbound - 5) >= 0) (GameElement_OutlineAll[firstbound + 5])->GetAt(secondbound - 5)->setSelectedType(3);
+		if ((firstbound - 6) >= 0 && (secondbound + 6) < 8) (GameElement_OutlineAll[firstbound - 6])->GetAt(secondbound + 6)->setSelectedType(3);
+		if ((firstbound + 6) < 8 && (secondbound - 6) >= 0) (GameElement_OutlineAll[firstbound + 6])->GetAt(secondbound - 6)->setSelectedType(3);
+		if ((firstbound - 7) >= 0 && (secondbound + 7) < 8) (GameElement_OutlineAll[firstbound - 7])->GetAt(secondbound + 7)->setSelectedType(3);
+		if ((firstbound + 7) < 8 && (secondbound - 7) >= 0) (GameElement_OutlineAll[firstbound + 7])->GetAt(secondbound - 7)->setSelectedType(3);
+
+
 	}
 	else
 	{
-		(GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound - 1)->setSelectedType(0);
-		(GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound + 1)->setSelectedType(0);
-		(GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound - 2)->setSelectedType(0);
-		(GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound + 2)->setSelectedType(0);
+		if ((firstbound - 1) >= 0 && (secondbound - 1) >= 0) (GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound - 1)->setSelectedType(0);
+		if ((firstbound + 1) < 8 && (secondbound + 1) < 8) (GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound + 1)->setSelectedType(0);
+		if ((firstbound - 2) >= 0 && (secondbound - 2) >= 0) (GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound - 2)->setSelectedType(0);
+		if ((firstbound + 2) < 8 && (secondbound + 2) < 8) (GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound + 2)->setSelectedType(0);
+		if ((firstbound - 3) >= 0 && (secondbound - 3) >= 0) (GameElement_OutlineAll[firstbound - 3])->GetAt(secondbound - 3)->setSelectedType(0);
+		if ((firstbound + 3) < 8 && (secondbound + 3) < 8) (GameElement_OutlineAll[firstbound + 3])->GetAt(secondbound + 3)->setSelectedType(0);
+		if ((firstbound - 4) >= 0 && (secondbound - 4) >= 0) (GameElement_OutlineAll[firstbound - 4])->GetAt(secondbound - 4)->setSelectedType(0);
+		if ((firstbound + 4) < 8 && (secondbound + 4) < 8) (GameElement_OutlineAll[firstbound + 4])->GetAt(secondbound + 4)->setSelectedType(0);
+		if ((firstbound - 5) >= 0 && (secondbound - 5) >= 0) (GameElement_OutlineAll[firstbound - 5])->GetAt(secondbound - 5)->setSelectedType(0);
+		if ((firstbound + 5) < 8 && (secondbound + 5) < 8) (GameElement_OutlineAll[firstbound + 5])->GetAt(secondbound + 5)->setSelectedType(0);
+		if ((firstbound - 6) >= 0 && (secondbound - 6) >= 0) (GameElement_OutlineAll[firstbound - 6])->GetAt(secondbound - 6)->setSelectedType(0);
+		if ((firstbound + 6) < 8 && (secondbound + 6) < 8) (GameElement_OutlineAll[firstbound + 6])->GetAt(secondbound + 6)->setSelectedType(0);
+		if ((firstbound - 7) >= 0 && (secondbound - 7) >= 0) (GameElement_OutlineAll[firstbound - 7])->GetAt(secondbound - 7)->setSelectedType(0);
+		if ((firstbound + 7) < 8 && (secondbound + 7) < 8) (GameElement_OutlineAll[firstbound + 7])->GetAt(secondbound + 7)->setSelectedType(0);
+
+		if ((firstbound - 1) >= 0 && (secondbound + 1) < 8) (GameElement_OutlineAll[firstbound - 1])->GetAt(secondbound + 1)->setSelectedType(0);
+		if ((firstbound + 1) < 8 && (secondbound - 1) >= 0) (GameElement_OutlineAll[firstbound + 1])->GetAt(secondbound - 1)->setSelectedType(0);
+		if ((firstbound - 2) >= 0 && (secondbound + 2) < 8) (GameElement_OutlineAll[firstbound - 2])->GetAt(secondbound + 2)->setSelectedType(0);
+		if ((firstbound + 2) < 8 && (secondbound - 2) >= 0) (GameElement_OutlineAll[firstbound + 2])->GetAt(secondbound - 2)->setSelectedType(0);
+		if ((firstbound - 3) >= 0 && (secondbound + 3) < 8) (GameElement_OutlineAll[firstbound - 3])->GetAt(secondbound + 3)->setSelectedType(0);
+		if ((firstbound + 3) < 8 && (secondbound - 3) >= 0) (GameElement_OutlineAll[firstbound + 3])->GetAt(secondbound - 3)->setSelectedType(0);
+		if ((firstbound - 4) >= 0 && (secondbound + 4) < 8) (GameElement_OutlineAll[firstbound - 4])->GetAt(secondbound + 4)->setSelectedType(0);
+		if ((firstbound + 4) < 8 && (secondbound - 4) >= 0) (GameElement_OutlineAll[firstbound + 4])->GetAt(secondbound - 4)->setSelectedType(0);
+		if ((firstbound - 5) >= 0 && (secondbound + 5) < 8) (GameElement_OutlineAll[firstbound - 5])->GetAt(secondbound + 5)->setSelectedType(0);
+		if ((firstbound + 5) < 8 && (secondbound - 5) >= 0) (GameElement_OutlineAll[firstbound + 5])->GetAt(secondbound - 5)->setSelectedType(0);
+		if ((firstbound - 6) >= 0 && (secondbound + 6) < 8) (GameElement_OutlineAll[firstbound - 6])->GetAt(secondbound + 6)->setSelectedType(0);
+		if ((firstbound + 6) < 8 && (secondbound - 6) >= 0) (GameElement_OutlineAll[firstbound + 6])->GetAt(secondbound - 6)->setSelectedType(0);
+		if ((firstbound - 7) >= 0 && (secondbound + 7) < 8) (GameElement_OutlineAll[firstbound - 7])->GetAt(secondbound + 7)->setSelectedType(0);
+		if ((firstbound + 7) < 8 && (secondbound - 7) >= 0) (GameElement_OutlineAll[firstbound + 7])->GetAt(secondbound - 7)->setSelectedType(0);
+
 	}
 }

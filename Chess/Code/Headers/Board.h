@@ -46,6 +46,10 @@ public:
 	BoardOutline^ getSelectedBoardOutline();
 	void setSelectedBoardOutline(BoardOutline^ x);
 
+	Piece::PieceTypes getSelectedBoardPiece();
+	void setSelectedBoardPiece(Piece::PieceTypes x);
+
+
 	BoardSpace^ getSelectedPossibleBoardSpace();
 	void setSelectedPossibleBoardSpace(BoardSpace^ x);
 
@@ -60,6 +64,8 @@ public:
 	void setGameElement_Outline(Vector<BoardOutline^>^ a, int x);
 
 
+
+
 	BoardSpace^ getGameElement_SpaceSpecific(int x, int xsp);
 	void setGameElement_SpaceSpecific(BoardSpace^ a, int x, int xsp);
 
@@ -71,6 +77,7 @@ private:
 
 	BoardSpace^ SelectedBoardSpace;
 	BoardOutline^ SelectedBoardOutline;
+	Piece::PieceTypes SelectedBoardPiece;
 
 	BoardSpace^ SelectedPossibleBoardSpace;
 	BoardOutline^ SelectedPossibleBoardOutline;
@@ -96,7 +103,8 @@ private:
 	Vector<BoardOutline^>^ GameElement_Outline8 = ref new Vector<BoardOutline^>();
 
 	std::vector< Vector<BoardOutline^>^ > GameElement_OutlineAll;
-	
+
+
 };
 
 #endif

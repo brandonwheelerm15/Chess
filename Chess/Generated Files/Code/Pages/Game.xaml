@@ -1,0 +1,226 @@
+﻿<Page
+    x:Class="Chess.Game"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Chess"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2' x:Name="grdMainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <local:BoardSpace x:ConnectionId='3' x:Name="BoardSpace11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='4' x:Name="BoardSpace12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='5' x:Name="BoardSpace13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='6' x:Name="BoardSpace14" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='7' x:Name="BoardSpace15" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='8' x:Name="BoardSpace16" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='9' x:Name="BoardSpace17" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='10' x:Name="BoardSpace18" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='11' x:Name="BoardSpace21" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='12' x:Name="BoardSpace22" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='13' x:Name="BoardSpace23" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='14' x:Name="BoardSpace24" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='15' x:Name="BoardSpace25" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='16' x:Name="BoardSpace26" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='17' x:Name="BoardSpace27" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='18' x:Name="BoardSpace28" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='19' x:Name="BoardSpace31" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='20' x:Name="BoardSpace32" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='21' x:Name="BoardSpace33" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='22' x:Name="BoardSpace34" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='23' x:Name="BoardSpace35" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='24' x:Name="BoardSpace36" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='25' x:Name="BoardSpace37" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='26' x:Name="BoardSpace38" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='27' x:Name="BoardSpace41" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='28' x:Name="BoardSpace42" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='29' x:Name="BoardSpace43" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='30' x:Name="BoardSpace44" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='31' x:Name="BoardSpace45" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='32' x:Name="BoardSpace46" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='33' x:Name="BoardSpace47" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='34' x:Name="BoardSpace48" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='35' x:Name="BoardSpace51" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='36' x:Name="BoardSpace52" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='37' x:Name="BoardSpace53" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='38' x:Name="BoardSpace54" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='39' x:Name="BoardSpace55" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='40' x:Name="BoardSpace56" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='41' x:Name="BoardSpace57" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='42' x:Name="BoardSpace58" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='43' x:Name="BoardSpace61" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='44' x:Name="BoardSpace62" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='45' x:Name="BoardSpace63" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='46' x:Name="BoardSpace64" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='47' x:Name="BoardSpace65" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='48' x:Name="BoardSpace66" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='49' x:Name="BoardSpace67" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='50' x:Name="BoardSpace68" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='51' x:Name="BoardSpace71" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='52' x:Name="BoardSpace72" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='53' x:Name="BoardSpace73" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='54' x:Name="BoardSpace74" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='55' x:Name="BoardSpace75" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='56' x:Name="BoardSpace76" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='57' x:Name="BoardSpace77" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='58' x:Name="BoardSpace78" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardSpace x:ConnectionId='59' x:Name="BoardSpace81" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='60' x:Name="BoardSpace82" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='61' x:Name="BoardSpace83" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='62' x:Name="BoardSpace84" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='63' x:Name="BoardSpace85" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='64' x:Name="BoardSpace86" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='65' x:Name="BoardSpace87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardSpace x:ConnectionId='66' x:Name="BoardSpace88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+
+
+
+        <local:PieceRook x:ConnectionId='67' x:Name="PieceBlackRook1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:ConnectionId='68' x:Name="PieceBlackKnight1" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:ConnectionId='69' x:Name="PieceBlackBishop1" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceQueen x:ConnectionId='70' x:Name="PieceBlackQueen" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceKing x:ConnectionId='71' x:Name="PieceBlackKing" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:ConnectionId='72' x:Name="PieceBlackBishop2" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:ConnectionId='73' x:Name="PieceBlackKnight2" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceRook x:ConnectionId='74' x:Name="PieceBlackRook2" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+
+        <local:PiecePawn x:ConnectionId='75' x:Name="PieceBlackPawn1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='76' x:Name="PieceBlackPawn2" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='77' x:Name="PieceBlackPawn3" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='78' x:Name="PieceBlackPawn4" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='79' x:Name="PieceBlackPawn5" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='80' x:Name="PieceBlackPawn6" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='81' x:Name="PieceBlackPawn7" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='82' x:Name="PieceBlackPawn8" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+
+        <local:PiecePawn x:ConnectionId='83' x:Name="PieceWhitePawn1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='84' x:Name="PieceWhitePawn2" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='85' x:Name="PieceWhitePawn3" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='86' x:Name="PieceWhitePawn4" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='87' x:Name="PieceWhitePawn5" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='88' x:Name="PieceWhitePawn6" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='89' x:Name="PieceWhitePawn7" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:ConnectionId='90' x:Name="PieceWhitePawn8" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+
+        <local:PieceRook x:ConnectionId='91' x:Name="PieceWhiteRook1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:ConnectionId='92' x:Name="PieceWhiteKnight1" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:ConnectionId='93' x:Name="PieceWhiteBishop1" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceQueen x:ConnectionId='94' x:Name="PieceWhiteQueen" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceKing x:ConnectionId='95' x:Name="PieceWhiteKing" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:ConnectionId='96' x:Name="PieceWhiteBishop2" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:ConnectionId='97' x:Name="PieceWhiteKnight2" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceRook x:ConnectionId='98' x:Name="PieceWhiteRook2" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+
+
+
+
+        <local:BoardOutline x:ConnectionId='99' x:Name="BoardOutline11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='100' x:Name="BoardOutline12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='101' x:Name="BoardOutline13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='102' x:Name="BoardOutline14" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='103' x:Name="BoardOutline15" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='104' x:Name="BoardOutline16" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='105' x:Name="BoardOutline17" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='106' x:Name="BoardOutline18" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='107' x:Name="BoardOutline21" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='108' x:Name="BoardOutline22" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='109' x:Name="BoardOutline23" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='110' x:Name="BoardOutline24" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='111' x:Name="BoardOutline25" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='112' x:Name="BoardOutline26" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='113' x:Name="BoardOutline27" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='114' x:Name="BoardOutline28" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='115' x:Name="BoardOutline31" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='116' x:Name="BoardOutline32" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='117' x:Name="BoardOutline33" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='118' x:Name="BoardOutline34" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='119' x:Name="BoardOutline35" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='120' x:Name="BoardOutline36" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='121' x:Name="BoardOutline37" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='122' x:Name="BoardOutline38" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='123' x:Name="BoardOutline41" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='124' x:Name="BoardOutline42" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='125' x:Name="BoardOutline43" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='126' x:Name="BoardOutline44" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='127' x:Name="BoardOutline45" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='128' x:Name="BoardOutline46" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='129' x:Name="BoardOutline47" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='130' x:Name="BoardOutline48" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='131' x:Name="BoardOutline51" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='132' x:Name="BoardOutline52" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='133' x:Name="BoardOutline53" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='134' x:Name="BoardOutline54" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='135' x:Name="BoardOutline55" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='136' x:Name="BoardOutline56" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='137' x:Name="BoardOutline57" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='138' x:Name="BoardOutline58" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='139' x:Name="BoardOutline61" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='140' x:Name="BoardOutline62" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='141' x:Name="BoardOutline63" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='142' x:Name="BoardOutline64" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='143' x:Name="BoardOutline65" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='144' x:Name="BoardOutline66" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='145' x:Name="BoardOutline67" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='146' x:Name="BoardOutline68" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='147' x:Name="BoardOutline71" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='148' x:Name="BoardOutline72" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='149' x:Name="BoardOutline73" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='150' x:Name="BoardOutline74" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='151' x:Name="BoardOutline75" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='152' x:Name="BoardOutline76" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='153' x:Name="BoardOutline77" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='154' x:Name="BoardOutline78" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"                                                                                                                                 />
+
+        <local:BoardOutline x:ConnectionId='155' x:Name="BoardOutline81" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='156' x:Name="BoardOutline82" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='157' x:Name="BoardOutline83" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='158' x:Name="BoardOutline84" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='159' x:Name="BoardOutline85" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='160' x:Name="BoardOutline86" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='161' x:Name="BoardOutline87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+        <local:BoardOutline x:ConnectionId='162' x:Name="BoardOutline88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"                                                                                                                                 />
+
+
+    </Grid>
+</Page>
+

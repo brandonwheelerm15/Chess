@@ -9,6 +9,18 @@
 #include "Code\Objects\BoardSpace.xaml.h"
 #include "Code\Headers\Board.h"
 #include "Code\Objects\PiecePawn.xaml.h"
+#include "Code\Objects\PieceKing.xaml.h"
+#include "Code\Objects\PieceQueen.xaml.h"
+#include "Code\Objects\PieceKnight.xaml.h"
+#include "Code\Objects\PieceRook.xaml.h"
+#include "Code\Objects\PieceBishop.xaml.h"
+
+#include "Code\Headers\PiecePawn.h"
+#include "Code\Headers\PieceKing.h"
+#include "Code\Headers\PieceQueen.h"
+#include "Code\Headers\PieceKnight.h"
+#include "Code\Headers\PieceRook.h"
+#include "Code\Headers\PieceBishop.h"
 
 #include <locale>
 #include <codecvt>
@@ -186,10 +198,76 @@ Game::Game()
 	CurrentBoard.setGameElement_OutlineSpecific(BoardOutline88, 8, 8);
 
 
-
 	CurrentBoard.ResetBoard();
 
-	BoardPiece88_PawnBlack->setColor(1);
+	PieceWhiteKing->setColor(2);
+	PieceWhiteQueen->setColor(2);
+	PieceWhiteBishop1->setColor(2);
+	PieceWhiteBishop2->setColor(2);
+	PieceWhiteKnight1->setColor(2);
+	PieceWhiteKnight2->setColor(2);
+	PieceWhiteRook1->setColor(2);
+	PieceWhiteRook2->setColor(2);
+	PieceWhitePawn1->setColor(2);
+	PieceWhitePawn2->setColor(2);
+	PieceWhitePawn3->setColor(2);
+	PieceWhitePawn4->setColor(2);
+	PieceWhitePawn5->setColor(2);
+	PieceWhitePawn6->setColor(2);
+	PieceWhitePawn7->setColor(2);
+	PieceWhitePawn8->setColor(2);
+
+
+	PieceBlackKing->setColor(1);
+	PieceBlackQueen->setColor(1);
+	PieceBlackBishop1->setColor(1);
+	PieceBlackBishop2->setColor(1);
+	PieceBlackKnight1->setColor(1);
+	PieceBlackKnight2->setColor(1);
+	PieceBlackRook1->setColor(1);
+	PieceBlackRook2->setColor(1);
+	PieceBlackPawn1->setColor(1);
+	PieceBlackPawn2->setColor(1);
+	PieceBlackPawn3->setColor(1);
+	PieceBlackPawn4->setColor(1);
+	PieceBlackPawn5->setColor(1);
+	PieceBlackPawn6->setColor(1);
+	PieceBlackPawn7->setColor(1);
+	PieceBlackPawn8->setColor(1);
+
+	PieceSpace::PieceKing PieceWhiteKingC();
+	PieceSpace::PieceQueen PieceWhiteQueenC();
+	PieceSpace::PieceBishop PieceWhiteBishopC();
+	PieceSpace::PieceBishop PieceWhiteBishopC();
+	PieceSpace::PieceKnight PieceWhiteKnightC();
+	PieceSpace::PieceKnight PieceWhiteKnightC();
+	PieceSpace::PieceRook PieceWhiteRookC();
+	PieceSpace::PieceRook PieceWhiteRookC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+	PieceSpace::PiecePawn PieceWhitePawnC();
+
+	PieceSpace::PieceKing PieceBlackKingC();
+	PieceSpace::PieceQueen PieceBlackQueenC();
+	PieceSpace::PieceBishop PieceBlackBishopC();
+	PieceSpace::PieceBishop PieceBlackBishopC();
+	PieceSpace::PieceKnight PieceBlackKnightC();
+	PieceSpace::PieceKnight PieceBlackKnightC();
+	PieceSpace::PieceRook PieceBlackRookC();
+	PieceSpace::PieceRook PieceBlackRookC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
+	PieceSpace::PiecePawn PieceBlackPawnC();
 }
 
 BoardOutline^ Chess::Game::FindBoardSpaceType(std::string ssname)

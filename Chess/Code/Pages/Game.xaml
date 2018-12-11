@@ -109,6 +109,45 @@
 
 
 
+        <local:PieceRook x:Name="PieceBlackRook1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:Name="PieceBlackKnight1" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:Name="PieceBlackBishop1" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceQueen x:Name="PieceBlackQueen" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceKing x:Name="PieceBlackKing" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:Name="PieceBlackBishop2" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:Name="PieceBlackKnight2" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <local:PieceRook x:Name="PieceBlackRook2" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"/>
+
+        <local:PiecePawn x:Name="PieceBlackPawn1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn2" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn3" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn4" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn5" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn6" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn7" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceBlackPawn8" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"/>
+
+        <local:PiecePawn x:Name="PieceWhitePawn1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn2" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn3" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn4" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn5" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn6" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn7" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <local:PiecePawn x:Name="PieceWhitePawn8" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
+
+        <local:PieceRook x:Name="PieceWhiteRook1" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:Name="PieceWhiteKnight1" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:Name="PieceWhiteBishop1" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceQueen x:Name="PieceWhiteQueen" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceKing x:Name="PieceWhiteKing" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceBishop x:Name="PieceWhiteBishop2" Grid.Column="6" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceKnight x:Name="PieceWhiteKnight2" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <local:PieceRook x:Name="PieceWhiteRook2" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"/>
+
+
+
+
         <local:BoardOutline x:Name="BoardOutline11" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
         <local:BoardOutline x:Name="BoardOutline12" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
         <local:BoardOutline x:Name="BoardOutline13" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
@@ -181,7 +220,6 @@
         <local:BoardOutline x:Name="BoardOutline87" Grid.Column="7" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
         <local:BoardOutline x:Name="BoardOutline88" Grid.Column="8" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
-        <local:PiecePawn x:Name="BoardPiece88_PawnBlack" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" PointerEntered="BoardSpace_PointerEntered" PointerExited="BoardSpace_PointerExited" PointerReleased="BoardSpace_PointerReleased"/>
 
     </Grid>
 </Page>

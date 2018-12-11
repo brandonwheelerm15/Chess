@@ -18,8 +18,13 @@ namespace Windows {
 }
 namespace Chess {
     ref class BoardSpace;
-    ref class BoardOutline;
+    ref class PieceRook;
+    ref class PieceKnight;
+    ref class PieceBishop;
+    ref class PieceQueen;
+    ref class PieceKing;
     ref class PiecePawn;
+    ref class BoardOutline;
 }
 
 namespace Chess
@@ -107,6 +112,38 @@ namespace Chess
         private: ::Chess::BoardSpace^ BoardSpace86;
         private: ::Chess::BoardSpace^ BoardSpace87;
         private: ::Chess::BoardSpace^ BoardSpace88;
+        private: ::Chess::PieceRook^ PieceBlackRook1;
+        private: ::Chess::PieceKnight^ PieceBlackKnight1;
+        private: ::Chess::PieceBishop^ PieceBlackBishop1;
+        private: ::Chess::PieceQueen^ PieceBlackQueen;
+        private: ::Chess::PieceKing^ PieceBlackKing;
+        private: ::Chess::PieceBishop^ PieceBlackBishop2;
+        private: ::Chess::PieceKnight^ PieceBlackKnight2;
+        private: ::Chess::PieceRook^ PieceBlackRook2;
+        private: ::Chess::PiecePawn^ PieceBlackPawn1;
+        private: ::Chess::PiecePawn^ PieceBlackPawn2;
+        private: ::Chess::PiecePawn^ PieceBlackPawn3;
+        private: ::Chess::PiecePawn^ PieceBlackPawn4;
+        private: ::Chess::PiecePawn^ PieceBlackPawn5;
+        private: ::Chess::PiecePawn^ PieceBlackPawn6;
+        private: ::Chess::PiecePawn^ PieceBlackPawn7;
+        private: ::Chess::PiecePawn^ PieceBlackPawn8;
+        private: ::Chess::PiecePawn^ PieceWhitePawn1;
+        private: ::Chess::PiecePawn^ PieceWhitePawn2;
+        private: ::Chess::PiecePawn^ PieceWhitePawn3;
+        private: ::Chess::PiecePawn^ PieceWhitePawn4;
+        private: ::Chess::PiecePawn^ PieceWhitePawn5;
+        private: ::Chess::PiecePawn^ PieceWhitePawn6;
+        private: ::Chess::PiecePawn^ PieceWhitePawn7;
+        private: ::Chess::PiecePawn^ PieceWhitePawn8;
+        private: ::Chess::PieceRook^ PieceWhiteRook1;
+        private: ::Chess::PieceKnight^ PieceWhiteKnight1;
+        private: ::Chess::PieceBishop^ PieceWhiteBishop1;
+        private: ::Chess::PieceQueen^ PieceWhiteQueen;
+        private: ::Chess::PieceKing^ PieceWhiteKing;
+        private: ::Chess::PieceBishop^ PieceWhiteBishop2;
+        private: ::Chess::PieceKnight^ PieceWhiteKnight2;
+        private: ::Chess::PieceRook^ PieceWhiteRook2;
         private: ::Chess::BoardOutline^ BoardOutline11;
         private: ::Chess::BoardOutline^ BoardOutline12;
         private: ::Chess::BoardOutline^ BoardOutline13;
@@ -171,7 +208,6 @@ namespace Chess
         private: ::Chess::BoardOutline^ BoardOutline86;
         private: ::Chess::BoardOutline^ BoardOutline87;
         private: ::Chess::BoardOutline^ BoardOutline88;
-        private: ::Chess::PiecePawn^ BoardPiece88_PawnBlack;
     };
 }
 
